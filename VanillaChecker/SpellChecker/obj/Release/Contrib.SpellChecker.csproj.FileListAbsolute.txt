@@ -1,0 +1,3 @@
+C:\Users\吴晨\我的项目\lucene.net\trunk\build\bin\contrib\SpellChecker\Release\Lucene.Net.Contrib.SpellChecker.XML
+C:\Users\吴晨\我的项目\lucene.net\trunk\build\bin\contrib\SpellChecker\Release\Lucene.Net.Contrib.SpellChecker.dll
+C:\Users\吴晨\我的项目\lucene.net\trunk\src\Contrib\SpellChecker\obj\Release\Lucene.Net.Contrib.SpellChecker.dll

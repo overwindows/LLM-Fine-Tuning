@@ -1,0 +1,10 @@
+C:\Users\吴晨\我的项目\Vanilla\Crawler\obj\Debug\NetCrawler.exe
+C:\Users\吴晨\我的项目\Vanilla\Crawler\obj\Debug\NetCrawler.pdb
+C:\Users\吴晨\我的项目\Vanilla\Crawler\bin\Debug\NetCrawler.exe
+C:\Users\吴晨\我的项目\Vanilla\Crawler\bin\Debug\NetCrawler.pdb
+C:\Users\吴晨\我的项目\Vanilla\Crawler\obj\Debug\Crawler.CrawlerForm.resources
+C:\Users\吴晨\我的项目\Vanilla\Crawler\obj\Debug\SiteCrawler.csproj.GenerateResource.Cache
+C:\Users\吴晨\我的项目\Vanilla\Crawler\bin\Debug\NetCrawler.exe.config
+C:\Users\吴晨\我的项目\Vanilla\Crawler\obj\Debug\SiteCrawler.csprojResolveAssemblyReference.cache
+C:\Users\吴晨\我的项目\Vanilla\Crawler\obj\Debug\Crawler.Properties.Resources.resources
+C:\Users\吴晨\我的项目\Vanilla\Crawler\bin\Debug\VanillaDemo.exe.config

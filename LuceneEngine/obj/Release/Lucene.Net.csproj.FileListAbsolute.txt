@@ -1,0 +1,6 @@
+C:\Users\吴晨\我的项目\lucene.net\trunk\build\bin\core\Release\Lucene.Net.XML
+C:\Users\吴晨\我的项目\lucene.net\trunk\build\bin\core\Release\Lucene.Net.dll
+C:\Users\吴晨\我的项目\lucene.net\trunk\build\bin\core\Release\Lucene.Net.pdb
+C:\Users\吴晨\我的项目\lucene.net\trunk\src\Core\obj\Release\Lucene.Net.csprojResolveAssemblyReference.cache
+C:\Users\吴晨\我的项目\lucene.net\trunk\src\Core\obj\Release\Lucene.Net.dll
+C:\Users\吴晨\我的项目\lucene.net\trunk\src\Core\obj\Release\Lucene.Net.pdb

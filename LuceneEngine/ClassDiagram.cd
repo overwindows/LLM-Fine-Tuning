@@ -1,0 +1,3280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Lucene.Net.Analysis.Analyzer" Collapsed="true">
+    <Position X="21.5" Y="25.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAABACAIAQAAECAAAAAAABAAAAABABAAAACAAAA=</HashCode>
+      <FileName>Analysis\Analyzer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Lucene.Net.Analysis.ASCIIFoldingFilter" Collapsed="true">
+    <Position X="1.75" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAACAAAAAIAAAAAAAABAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Analysis\ASCIIFoldingFilter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Analysis.BaseCharFilter" Collapsed="true">
+    <Position X="0.5" Y="42.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAIAAQAABAEAAAAACAAAAAAAIAAA=</HashCode>
+      <FileName>Analysis\BaseCharFilter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Analysis.CachingTokenFilter" Collapsed="true">
+    <Position X="6.25" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACIAAACAAAAgBAIAAAAAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Analysis\CachingTokenFilter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Analysis.CharArraySet" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="69.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABJBAABGAMRAAjAQgCACMQQgAgAAAKEEIAoCCABQAgA=</HashCode>
+      <FileName>Analysis\CharArraySet.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Lucene.Net.Analysis.CharFilter" Collapsed="true">
+    <Position X="0.5" Y="41" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAABAAAEAAAAAAiAAAAABAQAACCAAAIAAA=</HashCode>
+      <FileName>Analysis\CharFilter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Analysis.CharReader" Collapsed="true">
+    <Position X="2.75" Y="41" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAABABAEAAAAAAiAAAAABAQAACCAAAAAAA=</HashCode>
+      <FileName>Analysis\CharReader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Analysis.CharStream" Collapsed="true">
+    <Position X="1.75" Y="39.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>Analysis\CharStream.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Analysis.CharTokenizer" Collapsed="true">
+    <Position X="23.25" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AALAAQCCAAAAJAAAEAAAAAAABAAYAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>Analysis\CharTokenizer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Analysis.ISOLatin1AccentFilter" Collapsed="true">
+    <Position X="10.75" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAACAAAAAIAAAAAAAABAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Analysis\ISOLatin1AccentFilter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Analysis.KeywordAnalyzer" Collapsed="true">
+    <Position X="22.75" Y="26.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Analysis\KeywordAnalyzer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Analysis.KeywordTokenizer" Collapsed="true">
+    <Position X="26.5" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAIAAACAQAAAJAAAAAAAAAAAAAAAAAAAAAAGACAAAAA=</HashCode>
+      <FileName>Analysis\KeywordTokenizer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Analysis.LengthFilter" Collapsed="true">
+    <Position X="13" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEACAAAAQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Analysis\LengthFilter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Analysis.LetterTokenizer" Collapsed="true">
+    <Position X="24.25" Y="18" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Analysis\LetterTokenizer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Analysis.LowerCaseFilter" Collapsed="true">
+    <Position X="17.5" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Analysis\LowerCaseFilter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Analysis.LowerCaseTokenizer" Collapsed="true">
+    <Position X="24.25" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Analysis\LowerCaseTokenizer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Analysis.MappingCharFilter" Collapsed="true">
+    <Position X="0.5" Y="43.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAIgAAAAAAIAgAAAAAAIAgAAAAAAAAAABAAQIAAAA=</HashCode>
+      <FileName>Analysis\MappingCharFilter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Analysis.NormalizeCharMap" Collapsed="true">
+    <Position X="71.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAIAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>Analysis\NormalizeCharMap.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Analysis.NumericTokenStream" Collapsed="true">
+    <Position X="31" Y="15.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAKCYAJAAEAABAQCAAAAAAAAQAACICAAAoAAA=</HashCode>
+      <FileName>Analysis\NumericTokenStream.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Analysis.PerFieldAnalyzerWrapper" Collapsed="true">
+    <Position X="27.25" Y="26.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAABAAAJAAAEACAAAAAAAAARAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Analysis\PerFieldAnalyzerWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Analysis.PorterStemFilter" Collapsed="true">
+    <Position X="19.75" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Analysis\PorterStemFilter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Analysis.PorterStemmer" Collapsed="true">
+    <Position X="69.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIABABACAAADkAEAAAARMIAgAAIAAEAoQEATAIAIQA=</HashCode>
+      <FileName>Analysis\PorterStemmer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Analysis.SimpleAnalyzer" Collapsed="true">
+    <Position X="16" Y="26.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Analysis\SimpleAnalyzer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Analysis.StopAnalyzer" Collapsed="true">
+    <Position X="18.25" Y="26.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAEAACAAAAAAAEAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Analysis\StopAnalyzer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Analysis.StopFilter" Collapsed="true">
+    <Position X="4" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAIAAAQAAAAAAAAECAAAAAAAAAAIAgAAI=</HashCode>
+      <FileName>Analysis\StopFilter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Analysis.TeeSinkTokenFilter" Collapsed="true">
+    <Position X="8.5" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIIAAACBAAAAAAAACBAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Analysis\TeeSinkTokenFilter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Analysis.Token" Collapsed="true">
+    <Position X="10" Y="19.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAiBAAAAhQAABAUwAAYEAABAAUBAIAAEQAABwBAIhQ=</HashCode>
+      <FileName>Analysis\Token.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Lucene.Net.Analysis.TokenFilter" Collapsed="true">
+    <Position X="10.75" Y="15.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAACAABAAAEAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Analysis\TokenFilter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Analysis.Tokenizer" Collapsed="true">
+    <Position X="25.5" Y="15.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAABAAAEAAAAAAAAAAAABAAAAACAAAAAAA=</HashCode>
+      <FileName>Analysis\Tokenizer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Analysis.TokenStream" Collapsed="true">
+    <Position X="16.5" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAACAACAABAAAAAAAAAAAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>Analysis\TokenStream.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Lucene.Net.Analysis.WhitespaceAnalyzer" Collapsed="true">
+    <Position X="20.5" Y="26.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Analysis\WhitespaceAnalyzer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Analysis.WhitespaceTokenizer" Collapsed="true">
+    <Position X="22" Y="18" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Analysis\WhitespaceTokenizer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Analysis.WordlistLoader" Collapsed="true">
+    <Position X="64.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Analysis\WordlistLoader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Analysis.Standard.StandardAnalyzer" Collapsed="true">
+    <Position X="25" Y="26.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAFAAAQAAAQACAAAAAAAAAAAIAAAACAAgBEAAA=</HashCode>
+      <FileName>Analysis\Standard\StandardAnalyzer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Analysis.Standard.StandardFilter" Collapsed="true">
+    <Position X="15.25" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAIAAAAAAAAAAAAEAAAAAEAAACAAAAAAA=</HashCode>
+      <FileName>Analysis\Standard\StandardFilter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Analysis.Standard.StandardTokenizer" Collapsed="true">
+    <Position X="28.75" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEIEAECIBAAALAAAAAAAAAAAAAgIAIQECIKGAAAkAAA=</HashCode>
+      <FileName>Analysis\Standard\StandardTokenizer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Analysis.Standard.StandardTokenizerImpl" Collapsed="true">
+    <Position X="66" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AFA2EGANYBBADgAJIgASAAQAEMiuAEwMQJEiDEAOAoA=</HashCode>
+      <FileName>Analysis\Standard\StandardTokenizerImpl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Analysis.Tokenattributes.FlagsAttribute" Collapsed="true">
+    <Position X="14.5" Y="19.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAgAAAAAAAAAAAAIAAAAAAAABAIBQ=</HashCode>
+      <FileName>Analysis\Tokenattributes\FlagsAttribute.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Lucene.Net.Analysis.Tokenattributes.OffsetAttribute" Collapsed="true">
+    <Position X="1" Y="19.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAQgAAAAAAAAAAAAIAAAAAABABAIBQ=</HashCode>
+      <FileName>Analysis\Tokenattributes\OffsetAttribute.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Lucene.Net.Analysis.Tokenattributes.PayloadAttribute" Collapsed="true">
+    <Position X="3.25" Y="19.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAgAAQAAAAAAAAAIAAAAAAAABAIBA=</HashCode>
+      <FileName>Analysis\Tokenattributes\PayloadAttribute.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Lucene.Net.Analysis.Tokenattributes.PositionIncrementAttribute" Collapsed="true">
+    <Position X="5.5" Y="19.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAABAAEAAIAAAAAAAABAIBA=</HashCode>
+      <FileName>Analysis\Tokenattributes\PositionIncrementAttribute.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Lucene.Net.Analysis.Tokenattributes.TermAttribute" Collapsed="true">
+    <Position X="7.75" Y="19.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAiAAAAAgAAAAAUwAAAEAAAAAEAAIAAEAAAAgBAIhA=</HashCode>
+      <FileName>Analysis\Tokenattributes\TermAttribute.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Lucene.Net.Analysis.Tokenattributes.TypeAttribute" Collapsed="true">
+    <Position X="12.25" Y="19.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAABAIAAAQAAAABAIhA=</HashCode>
+      <FileName>Analysis\Tokenattributes\TypeAttribute.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Lucene.Net.Documents.AbstractField" Collapsed="true">
+    <Position X="37.75" Y="38.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIACDAgAIAQAECCDQAQQhYJAkQCAwQEEQABABICA=</HashCode>
+      <FileName>Document\AbstractField.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Lucene.Net.Documents.CompressionTools" Collapsed="true">
+    <Position X="62.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEBAAAAAAAACAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Document\CompressionTools.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Documents.DateField" Collapsed="true">
+    <Position X="52" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAEAAAAABABAAAAgAQAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Document\DateField.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Documents.DateTools" Collapsed="true">
+    <Position X="53.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAgAAAEAAAAgBQAAAAAgAQCAAAAAAAAAQAIAACA=</HashCode>
+      <FileName>Document\DateTools.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Documents.Document" Collapsed="true">
+    <Position X="59" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAKAIhAAoACAAABEAABAAAAAQAAEQAAAAAAAAACQAAA=</HashCode>
+      <FileName>Document\Document.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Documents.Field" Collapsed="true">
+    <Position X="36.5" Y="39.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAQAAAAAAACAgAAEAAAAAAAA=</HashCode>
+      <FileName>Document\Field.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Lucene.Net.Documents.FieldExtensions" Collapsed="true">
+    <Position X="57.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAACAABAAAgAAAAAAAAAUAAAAACAAA=</HashCode>
+      <FileName>Document\Field.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Documents.LoadFirstFieldSelector" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="50.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Document\LoadFirstFieldSelector.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Lucene.Net.Documents.MapFieldSelector" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="60.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Document\MapFieldSelector.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Lucene.Net.Documents.NumberTools" Collapsed="true">
+    <Position X="53.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIEAAAAAAAEAAAAAJAAAAADAEAAAAEAFAAABAA=</HashCode>
+      <FileName>Document\NumberTools.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Documents.NumericField" Collapsed="true">
+    <Position X="38.75" Y="39.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAIAAQAAAABAAQAAAAAAACQgACAAAEAAAAA=</HashCode>
+      <FileName>Document\NumericField.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Documents.SetBasedFieldSelector" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="71.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AICAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Document\SetBasedFieldSelector.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Lucene.Net.Index.AbstractAllTermDocs" Collapsed="true">
+    <Position X="11.5" Y="42.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IgAAAAAAACAAAAAACAAAQAggCAAAAAAAAAEAAQCAAAA=</HashCode>
+      <FileName>Index\AbstractAllTermDocs.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Lucene.Net.Index.AllTermDocs" Collapsed="true">
+    <Position X="11.5" Y="43.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABCAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Index\AllTermDocs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.BufferedDeletes" Collapsed="true">
+    <Position X="59" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAQAAEAAAQgAhEAAAEAAAAAABAAAAAAgAAAAAABAAAA=</HashCode>
+      <FileName>Index\BufferedDeletes.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.ByteBlockPool" Collapsed="true">
+    <Position X="62.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>KAAAAACAAAAAJAAAAAAAAIAAQYAQAAABAAJAAQAREAA=</HashCode>
+      <FileName>Index\ByteBlockPool.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.ByteSliceReader" Collapsed="true">
+    <Position X="29.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIACBABAAACAAAAABABAEAAEAgAAlCAAAAEBA=</HashCode>
+      <FileName>Index\ByteSliceReader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.ByteSliceWriter" Collapsed="true">
+    <Position X="64.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAiAAAAAAAAAAAAAQAAAAAAiAIkCAAAAAAA=</HashCode>
+      <FileName>Index\ByteSliceWriter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.CharBlockPool" Collapsed="true">
+    <Position X="71.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAABAgAAAAAAACgAIAAAAAAAAJACAAAEAA=</HashCode>
+      <FileName>Index\CharBlockPool.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.CheckIndex" Collapsed="true">
+    <Position X="50.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gEAAAAACACAAAgAAAAACCAAAAAAAhAAAAAAABAAgKgA=</HashCode>
+      <FileName>Index\CheckIndex.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.CompoundFileReader" Collapsed="true">
+    <Position X="3.25" Y="33.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAABICACAQAAAgFECgAAwAEACAAAAACEEAAAAAAAA=</HashCode>
+      <FileName>Index\CompoundFileReader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.CompoundFileWriter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="60.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAACAQAAIAAQAgAAUAAAAAAAAAAEEAAACAAgA=</HashCode>
+      <FileName>Index\CompoundFileWriter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Lucene.Net.Index.ConcurrentMergeScheduler" Collapsed="true">
+    <Position X="36.5" Y="36.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQKQgBKQgAACABAIAAEAgAQBAAQAAAYACKGACAAo=</HashCode>
+      <FileName>Index\ConcurrentMergeScheduler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.CorruptIndexException" Collapsed="true">
+    <Position X="66" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Index\CorruptIndexException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.DefaultSkipListReader" Collapsed="true">
+    <Position X="41.5" Y="36.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAQAAAAACBAAAAAAgAAABgAwBgAIAAACAAABAAA=</HashCode>
+      <FileName>Index\DefaultSkipListReader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.DefaultSkipListWriter" Collapsed="true">
+    <Position X="29.5" Y="42.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAoAAAIAAABIACAAAABAAAQIAAAAIgBAAAAYAAgAA=</HashCode>
+      <FileName>Index\DefaultSkipListWriter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.DirectoryReader" Collapsed="true">
+    <Position X="22.5" Y="29.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IUMArJQEAACYYQQiQEKEAMhGAAAMIACiEwEARRCACLA=</HashCode>
+      <FileName>Index\DirectoryReader.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Lucene.Net.Index.DocConsumer" Collapsed="true">
+    <Position X="8.5" Y="42.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIACAAACAAAAAAAAAAAAAAAAAAAAAAAAAIABA=</HashCode>
+      <FileName>Index\DocConsumer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.DocConsumerPerThread" Collapsed="true">
+    <Position X="42.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Index\DocConsumerPerThread.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.DocFieldConsumer" Collapsed="true">
+    <Position X="29.75" Y="38.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAJACAAACAAAAAAAAAAAAAAAAABAAAAAAAIABA=</HashCode>
+      <FileName>Index\DocFieldConsumer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.DocFieldConsumerPerField" Collapsed="true">
+    <Position X="24.75" Y="38.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Index\DocFieldConsumerPerField.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.DocFieldConsumerPerThread" Collapsed="true">
+    <Position X="38.75" Y="21.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAEAAAAACAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Index\DocFieldConsumerPerThread.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.DocFieldConsumers" Collapsed="true">
+    <Position X="30.75" Y="39.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACgAAIACAACCAAAAAAAQAAIAAACAABAAIABAAIABA=</HashCode>
+      <FileName>Index\DocFieldConsumers.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.DocFieldConsumersPerField" Collapsed="true">
+    <Position X="25.75" Y="39.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAgAAAAAAAACAAAAAAAACAAAAACAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Index\DocFieldConsumersPerField.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.DocFieldConsumersPerThread" Collapsed="true">
+    <Position X="39.75" Y="22.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAwAAEAAAAACBAAAAAAAAACAAACAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Index\DocFieldConsumersPerThread.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.DocFieldProcessor" Collapsed="true">
+    <Position X="8.5" Y="43.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAJACAAACAAAAAAAAAgAACAAAIAAAAAAAAIABA=</HashCode>
+      <FileName>Index\DocFieldProcessor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.DocFieldProcessorPerField" Collapsed="true">
+    <Position X="57.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gACAAAAAAAAAACAAAAAAQAAAAAAAAAIAAAAAACIAAAA=</HashCode>
+      <FileName>Index\DocFieldProcessorPerField.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.DocFieldProcessorPerThread" Collapsed="true">
+    <Position X="42.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACCGAEBIAAACCAAAAAAAQAALACAAAIAAAIABCEBgAg=</HashCode>
+      <FileName>Index\DocFieldProcessorPerThread.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.DocInverter" Collapsed="true">
+    <Position X="28.5" Y="39.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIACAAACAAAAAAAAAAAAAAAAIRAAAAAAAIABA=</HashCode>
+      <FileName>Index\DocInverter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.DocInverterPerField" Collapsed="true">
+    <Position X="23.5" Y="39.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAgAAAAAAAAAACAAAAAAAACACAAACAIQAAAAAAAAAAA=</HashCode>
+      <FileName>Index\DocInverterPerField.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.DocInverterPerThread" Collapsed="true">
+    <Position X="37.5" Y="22.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQDAEAAAAACAAAAAAAAAACAAACAIQEAIAAAIAAAA=</HashCode>
+      <FileName>Index\DocInverterPerThread.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.DocumentsWriter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="60.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>rFok00EpTKR4ny8EgFEC1LcYUnVqRkfwI8YI5FCohf4=</HashCode>
+      <FileName>Index\DocumentsWriter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Lucene.Net.Index.DocumentsWriterThreadState" Collapsed="true">
+    <Position X="62.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAFAAAAAAAgCAAAAAIAAAQAAAAAgAA=</HashCode>
+      <FileName>Index\DocumentsWriterThreadState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.FieldInfo" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="59" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgQBAAKAAgAIQAAAACAQQAAAAIAEAAACAAAAIAAIABA=</HashCode>
+      <FileName>Index\FieldInfo.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Lucene.Net.Index.FieldInfos" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="60.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAHIAABAAAgYgAAAAECCQgAACEACAEBAAAgAEAQBA=</HashCode>
+      <FileName>Index\FieldInfos.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Lucene.Net.Index.FieldInvertState" Collapsed="true">
+    <Position X="62.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAQAAAAABQAgAEBAIABAQAAAAAAABAAAAAABgAA=</HashCode>
+      <FileName>Index\FieldInvertState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.FieldReaderException" Collapsed="true">
+    <Position X="64.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Index\FieldReaderException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.FieldSortedTermVectorMapper" Collapsed="true">
+    <Position X="28" Y="33.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAABAABCIAAAAgQAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Index\FieldSortedTermVectorMapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.FieldsReader" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="66" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQEJAABFACAAgCFgAIuACAYACIAAAAAAAIBAAAAAABA=</HashCode>
+      <FileName>Index\FieldsReader.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Lucene.Net.Index.FieldsWriter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="67.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEgAAABoCEgAQAAAACAAAAAAEgAAAAAAABogAQIBAA=</HashCode>
+      <FileName>Index\FieldsWriter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Lucene.Net.Index.FilterIndexReader" Collapsed="true">
+    <Position X="24.75" Y="29.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IgYArBAEAAAAQAQAQEAAAIAAAAAIAACiAEEABRAAALA=</HashCode>
+      <FileName>Index\FilterIndexReader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.FormatPostingsDocsConsumer" Collapsed="true">
+    <Position X="42.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAg=</HashCode>
+      <FileName>Index\FormatPostingsDocsConsumer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.FormatPostingsDocsWriter" Collapsed="true">
+    <Position X="42.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAhIACAAAAHAAAAYAgAAAAEIAACAAAAABAgIAAg=</HashCode>
+      <FileName>Index\FormatPostingsDocsWriter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Lucene.Net.Index.FormatPostingsFieldsConsumer" Collapsed="true">
+    <Position X="39.5" Y="41.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Index\FormatPostingsFieldsConsumer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.FormatPostingsFieldsWriter" Collapsed="true">
+    <Position X="39.5" Y="42.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABFACAAAQAAAAAAAAAAAAAAAAAAACAAAAgAEAg=</HashCode>
+      <FileName>Index\FormatPostingsFieldsWriter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.FormatPostingsPositionsConsumer" Collapsed="true">
+    <Position X="41.5" Y="38.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAg=</HashCode>
+      <FileName>Index\FormatPostingsPositionsConsumer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.FormatPostingsPositionsWriter" Collapsed="true">
+    <Position X="41.5" Y="39.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAgAACAAAABAAAAQAAAAAAAABACAAAAAAAAIQAg=</HashCode>
+      <FileName>Index\FormatPostingsPositionsWriter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.FormatPostingsTermsConsumer" Collapsed="true">
+    <Position X="36.5" Y="41.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Index\FormatPostingsTermsConsumer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.FormatPostingsTermsWriter" Collapsed="true">
+    <Position X="36.5" Y="42.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAgACCAAAADAAEBCAEAAAAAAAAAAAAAAAAAAEAg=</HashCode>
+      <FileName>Index\FormatPostingsTermsWriter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Lucene.Net.Index.FreqProxFieldMergeState" Collapsed="true">
+    <Position X="50.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACCACAUAAAABACAAEAAAAAAAQAAAAAIAEAAAAkAAQA=</HashCode>
+      <FileName>Index\FreqProxFieldMergeState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.FreqProxTermsWriter" Collapsed="true">
+    <Position X="18.5" Y="37.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAIACEAACDAAAAAAAAAAAAAAAQAAAACAAAIAAA=</HashCode>
+      <FileName>Index\FreqProxTermsWriter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.FreqProxTermsWriterPerField" Collapsed="true">
+    <Position X="10.5" Y="37.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAEgACAACgABCQAAIASAACACAAACAAAAAAAAAABAAg=</HashCode>
+      <FileName>Index\FreqProxTermsWriterPerField.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Lucene.Net.Index.FreqProxTermsWriterPerThread" Collapsed="true">
+    <Position X="36.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAEAAAAACAAAAAAAAABCAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Index\FreqProxTermsWriterPerThread.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.IndexCommit" Collapsed="true">
+    <Position X="59" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IBAAgBAAAAAAAAAAgAACAAAAAAEAAIAAAAAAAQBIABA=</HashCode>
+      <FileName>Index\IndexCommit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.IndexFileDeleter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="60.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kAAAQAAACCBQAgAACBIMAAEiAAAAgBACAIGIoAEgAEA=</HashCode>
+      <FileName>Index\IndexFileDeleter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Lucene.Net.Index.IndexFileNameFilter" Collapsed="true">
+    <Position X="62.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAACAAAAAAAAAAAAAABAAAAARAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>Index\IndexFileNameFilter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.IndexFileNames" Collapsed="true">
+    <Position X="64.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgECAg0AAAIkAAMAEAAAAmAAACCAAQAmAAIgACAIAAA=</HashCode>
+      <FileName>Index\IndexFileNames.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.IndexReader" Collapsed="true">
+    <Position X="20.25" Y="28.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>MgICrNAEACCgYAQAaFAEiIACAIALAACig8EAhRCISLA=</HashCode>
+      <FileName>Index\IndexReader.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Lucene.Net.Index.IndexWriter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="66" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>q+swqPCOY6l+gtauRMIsqfPxw7Nvo3mmTuqWdMr+rOo=</HashCode>
+      <FileName>Index\IndexWriter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Lucene.Net.Index.IntBlockPool" Collapsed="true">
+    <Position X="69.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>KAAAAAAAACAABQAAAAAAAAAgAIAAAAAAAAJAAAAAEAA=</HashCode>
+      <FileName>Index\IntBlockPool.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.InvertedDocConsumer" Collapsed="true">
+    <Position X="20.5" Y="39.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAJACAAACAAAAAAAAAAAAAAAAABAAAAAAAIABA=</HashCode>
+      <FileName>Index\InvertedDocConsumer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.InvertedDocConsumerPerField" Collapsed="true">
+    <Position X="17.5" Y="39.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAACAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Index\InvertedDocConsumerPerField.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.InvertedDocConsumerPerThread" Collapsed="true">
+    <Position X="14.5" Y="39.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAEAAAAACAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Index\InvertedDocConsumerPerThread.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.InvertedDocEndConsumer" Collapsed="true">
+    <Position X="26.5" Y="41.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIACAAACAAAAAAAAAAAAAAAAABAAAAAAAIAAA=</HashCode>
+      <FileName>Index\InvertedDocEndConsumer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.InvertedDocEndConsumerPerField" Collapsed="true">
+    <Position X="23.5" Y="41.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Index\InvertedDocEndConsumerPerField.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.InvertedDocEndConsumerPerThread" Collapsed="true">
+    <Position X="41.5" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAEAAAAACAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Index\InvertedDocEndConsumerPerThread.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.KeepOnlyLastCommitDeletionPolicy" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="71.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAABAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>Index\KeepOnlyLastCommitDeletionPolicy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Lucene.Net.Index.LogByteSizeMergePolicy" Collapsed="true">
+    <Position X="0.5" Y="38.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAgAAAAAAAEAQAAAAAEQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Index\LogByteSizeMergePolicy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.LogDocMergePolicy" Collapsed="true">
+    <Position X="2.75" Y="38.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAgAAAAAAAAAAAAAAAAgABAAAAAAAAAAA=</HashCode>
+      <FileName>Index\LogDocMergePolicy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.LogMergePolicy" Collapsed="true">
+    <Position X="1.75" Y="36.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EEAAgAAABIA0gAACABKBgEAIAQBUAQACAASEKwAAAAg=</HashCode>
+      <FileName>Index\LogMergePolicy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.MergeDocIDRemapper" Collapsed="true">
+    <Position X="64.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAEAAAAAAAAAgAAQAAAAAAAAAAEAAAAEAAAAAAQA=</HashCode>
+      <FileName>Index\MergeDocIDRemapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.MergePolicy" Collapsed="true">
+    <Position X="1.75" Y="35.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAACAAAAAAAAIAAAAIAABAAQAAAQAAAACAAAA=</HashCode>
+      <FileName>Index\MergePolicy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Lucene.Net.Index.MergeScheduler" Collapsed="true">
+    <Position X="37.75" Y="35.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAQAAAAAAAACAAAA=</HashCode>
+      <FileName>Index\MergeScheduler.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Lucene.Net.Index.MultiLevelSkipListReader" Collapsed="true">
+    <Position X="41.5" Y="35.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAICAAAgCAAABAgEEAIgACCBAAMAAIAAAFCgAAQEAE=</HashCode>
+      <FileName>Index\MultiLevelSkipListReader.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Lucene.Net.Index.MultiLevelSkipListWriter" Collapsed="true">
+    <Position X="29.5" Y="41.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAQAAAAAABAAgAAAIAAAAQAAAAAAQAAACAAAAAAA=</HashCode>
+      <FileName>Index\MultiLevelSkipListWriter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.MultipleTermPositions" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="67.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IgAIAAgAACAAAAAAGAAAQCAgCAABAAACAAEACACAAAA=</HashCode>
+      <FileName>Index\MultipleTermPositions.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Lucene.Net.Index.MultiReader" Collapsed="true">
+    <Position X="18" Y="29.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAIArAQEAAAIQQQgQEIAAIgEAAAIAACiEQGABRAAALA=</HashCode>
+      <FileName>Index\MultiReader.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Lucene.Net.Index.NormsWriter" Collapsed="true">
+    <Position X="26.5" Y="42.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAJACAAACAAAAAAAAAAAAAAABABAAAAAAAIAIA=</HashCode>
+      <FileName>Index\NormsWriter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.NormsWriterPerField" Collapsed="true">
+    <Position X="23.5" Y="42.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAABCQAAEAAAACACAAACAAAAAEAAAAAACg=</HashCode>
+      <FileName>Index\NormsWriterPerField.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Lucene.Net.Index.NormsWriterPerThread" Collapsed="true">
+    <Position X="41.5" Y="19.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAEAAAAACAAAAAAAAAACAAAAAAAAAAACAIAABA=</HashCode>
+      <FileName>Index\NormsWriterPerThread.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.ParallelReader" Collapsed="true">
+    <Position X="20.25" Y="29.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAIArAEEgIAAQQQCQEIAAIgEAAAIAACiAQCAJRAEALA=</HashCode>
+      <FileName>Index\ParallelReader.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Lucene.Net.Index.Payload" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="64.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACIAAABEAAAAAAAgMAAAABAAAAAAIAAAAAQAAAAoBA=</HashCode>
+      <FileName>Index\Payload.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Lucene.Net.Index.PositionBasedTermVectorMapper" Collapsed="true">
+    <Position X="30.25" Y="33.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABCoAAAEgQAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Index\PositionBasedTermVectorMapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.RawPostingList" Collapsed="true">
+    <Position X="53.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAEAAAAACAEAAAAAA=</HashCode>
+      <FileName>Index\RawPostingList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.ReadOnlyDirectoryReader" Collapsed="true">
+    <Position X="22.5" Y="31.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Index\ReadOnlyDirectoryReader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.ReadOnlySegmentReader" Collapsed="true">
+    <Position X="15.75" Y="31.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAAAACAAAAAAAQAAAAA=</HashCode>
+      <FileName>Index\ReadOnlySegmentReader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.ReusableStringReader" Collapsed="true">
+    <Position X="57.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAEAAAAAAAAAQAgAAAIAAAAAIECAACAAIA=</HashCode>
+      <FileName>Index\ReusableStringReader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.SegmentInfo" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="62.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAEoiAyBAsUgGABgAAAkAQEAM3AAAQogAEAiJw=</HashCode>
+      <FileName>Index\SegmentInfo.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Lucene.Net.Index.SegmentInfos" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="64.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>6woAAGCCBgAoCEQGgEgACDAgACAEAIEAiGAAMENoQLA=</HashCode>
+      <FileName>Index\SegmentInfos.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Lucene.Net.Index.SegmentMergeInfo" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="66" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAIACAACQABAAAECAAAAAAACAQgAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Index\SegmentMergeInfo.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Lucene.Net.Index.SegmentMergeQueue" Collapsed="true">
+    <Position X="28.75" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>Index\SegmentMergeQueue.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Lucene.Net.Index.SegmentMerger" Collapsed="true">
+    <Position X="67.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABIAAsBFAIETJQhSAyTYCAAgAUAAAQAAAAJAgAC0AAA=</HashCode>
+      <FileName>Index\SegmentMerger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.SegmentReader" Collapsed="true">
+    <Position X="15.75" Y="29.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AwpoLbIHBDCoAQxEYECAAMVIIQQIgBCiAEcAdRABCLQ=</HashCode>
+      <FileName>Index\SegmentReader.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Lucene.Net.Index.SegmentTermDocs" Collapsed="true">
+    <Position X="40.5" Y="27.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IoAIACBABCAAAAFCHAAIAAAgGAAAQIAIAIEABACQBAA=</HashCode>
+      <FileName>Index\SegmentTermDocs.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Lucene.Net.Index.SegmentTermEnum" Collapsed="true">
+    <Position X="1" Y="22.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAEAAABACAAAAQACIAIOAAAUAEAIFQBEAEQACAAABA=</HashCode>
+      <FileName>Index\SegmentTermEnum.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Lucene.Net.Index.SegmentTermPositions" Collapsed="true">
+    <Position X="40.5" Y="28.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AkAIAAAAgCCAABACCAAAICAgAAC1AIAAAAAAAEAAAAg=</HashCode>
+      <FileName>Index\SegmentTermPositions.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Lucene.Net.Index.SegmentTermPositionVector" Collapsed="true">
+    <Position X="40.5" Y="25.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAMAABAABAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>Index\SegmentTermPositionVector.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Lucene.Net.Index.SegmentTermVector" Collapsed="true">
+    <Position X="40.5" Y="24.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AECAAAAQAgwAgAAEAAAAAAAAAAAAAgAAAAAAAAAAgAA=</HashCode>
+      <FileName>Index\SegmentTermVector.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Lucene.Net.Index.SegmentWriteState" Collapsed="true">
+    <Position X="69.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIIQAAAAAAIAAAAkAAAAAAAABQAAAAABAAA=</HashCode>
+      <FileName>Index\SegmentWriteState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.SerialMergeScheduler" Collapsed="true">
+    <Position X="38.75" Y="36.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Index\SerialMergeScheduler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.SnapshotDeletionPolicy" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="55.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIACAAAAAgAAAAAAQABAAAAAAAAAQAAIAAABAAAAA=</HashCode>
+      <FileName>Index\SnapshotDeletionPolicy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Lucene.Net.Index.SortedTermVectorMapper" Collapsed="true">
+    <Position X="25.75" Y="33.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAADAABAoAAQAAAAAAAQAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Index\SortedTermVectorMapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.StaleReaderException" Collapsed="true">
+    <Position X="64.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Index\StaleReaderException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.StoredFieldsWriter" Collapsed="true">
+    <Position X="67.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACQAAJACAACCAAAAAAAQIgIACACAAAAAIAAAAIABI=</HashCode>
+      <FileName>Index\StoredFieldsWriter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.StoredFieldsWriterPerThread" Collapsed="true">
+    <Position X="69.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAQAAEAAAAAKAAAAAIAAAACAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Index\StoredFieldsWriterPerThread.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.Term" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="52" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAEAAAAABAQEgAAAAAAAAAAAAIAIAAAAGAAAgAA=</HashCode>
+      <FileName>Index\Term.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Lucene.Net.Index.TermBuffer" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="53.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAQEAAABAQAAAAAQAAgAAAQAAgIAAAAAAIAABA=</HashCode>
+      <FileName>Index\TermBuffer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Lucene.Net.Index.TermEnum" Collapsed="true">
+    <Position X="6.5" Y="21.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAACAAAAQAAAAAAAAAAAAAAAAAEAAAAACAAAA=</HashCode>
+      <FileName>Index\TermEnum.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Lucene.Net.Index.TermInfo" Collapsed="true">
+    <Position X="55.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAARAAAAAAAAAAAAAAAAAQAAAAAAAABAAA=</HashCode>
+      <FileName>Index\TermInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.TermInfosReader" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="57.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EKAgCAABACCQgQBAEIEAAAgAAQAAAQACAgAAAAIAAAA=</HashCode>
+      <FileName>Index\TermInfosReader.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Lucene.Net.Index.TermInfosWriter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="59" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIEAABBACAgAQAAEIAIABAAGAAAEAAgAAAoAQwgQAA=</HashCode>
+      <FileName>Index\TermInfosWriter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Lucene.Net.Index.TermsHash" Collapsed="true">
+    <Position X="20.5" Y="40.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CABAgACIACAAACAAgAAAgCAgAAAAAAIBAAQAAQAIABg=</HashCode>
+      <FileName>Index\TermsHash.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.TermsHashConsumer" Collapsed="true">
+    <Position X="19.75" Y="36.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAJACAAACCAAAAAAAAAAAAAAAQBAAAAAAAIAAA=</HashCode>
+      <FileName>Index\TermsHashConsumer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.TermsHashConsumerPerField" Collapsed="true">
+    <Position X="11.75" Y="36.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAACAAAAAAAAACAAAAAAAACAAAAAAAAAABAAg=</HashCode>
+      <FileName>Index\TermsHashConsumerPerField.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.TermsHashConsumerPerThread" Collapsed="true">
+    <Position X="37.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAEAAAAACAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Index\TermsHashConsumerPerThread.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.TermsHashPerField" Collapsed="true">
+    <Position X="17.5" Y="40.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAIAAAgAgDgANCiAAAAAAACGSAAADAJyhGJgIACAIQg=</HashCode>
+      <FileName>Index\TermsHashPerField.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.TermsHashPerThread" Collapsed="true">
+    <Position X="14.5" Y="40.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAEAJAABCAgAgAAAAAACAAAAAIgEKAAAAMAAQA=</HashCode>
+      <FileName>Index\TermsHashPerThread.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.TermVectorEntry" Collapsed="true">
+    <Position X="60.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAGAAAAAACAAAAAEgAAAMAABAIAQAoCAEAAAAAAAgAA=</HashCode>
+      <FileName>Index\TermVectorEntry.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.TermVectorEntryFreqSortedComparator" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="62.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>Index\TermVectorEntryFreqSortedComparator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Lucene.Net.Index.TermVectorMapper" Collapsed="true">
+    <Position X="29" Y="32.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgBAABAIAAAEAAAAAAAAAAAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>Index\TermVectorMapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.TermVectorsReader" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="64.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAFACBBCAAgAFAEIOACAIgAgAAACAAAACIAAAQARA=</HashCode>
+      <FileName>Index\TermVectorsReader.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Lucene.Net.Index.ParallelArrayTermVectorMapper" Collapsed="true">
+    <Position X="32.5" Y="33.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAQABgIAABAAAAAMAADAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Index\TermVectorsReader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.TermVectorsTermsWriter" Collapsed="true">
+    <Position X="20.75" Y="37.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACQAAIACAACCCAAAAQAQAgIAIACAQAAAIAAAAIARI=</HashCode>
+      <FileName>Index\TermVectorsTermsWriter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.TermVectorsTermsWriterPerField" Collapsed="true">
+    <Position X="12.75" Y="37.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAgACAQCAAACAAAAAGAACCCAAACQAAACAgAIABAAg=</HashCode>
+      <FileName>Index\TermVectorsTermsWriterPerField.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.TermVectorsTermsWriterPerThread" Collapsed="true">
+    <Position X="38.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAEAAAAACAAAAAIAgEBCCAAABAAACEAAAIAAAA=</HashCode>
+      <FileName>Index\TermVectorsTermsWriterPerThread.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Index.TermVectorsWriter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="66" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABgCAAAQAAAAAAAAAAAAAAAAAAAAEAAAAAAQA=</HashCode>
+      <FileName>Index\TermVectorsWriter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Lucene.Net.LucenePackage" Collapsed="true">
+    <Position X="59" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LucenePackage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Messages.MessageImpl" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="66" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQQEAAAEAAAAAgEgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Messages\MessageImpl.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Lucene.Net.Messages.NLS" Collapsed="true">
+    <Position X="69.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAEAAAEAAAAAEACAiAAAAAAAAAAIA=</HashCode>
+      <FileName>Messages\NLS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.QueryParsers.FastCharStream" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="69.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BgBAAAAAAAAAAQACQAJAAAAgAAAIIRAAAABAIAABgAI=</HashCode>
+      <FileName>QueryParser\FastCharStream.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Lucene.Net.QueryParsers.MultiFieldQueryParser" Collapsed="true">
+    <Position X="5.5" Y="39.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACCgAAAAAAAAAAAAAABABAAAAAABEAAAAgAAAAAAAAA=</HashCode>
+      <FileName>QueryParser\MultiFieldQueryParser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.QueryParsers.ParseException" Collapsed="true">
+    <Position X="62.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAIAAAAAAAAAAAkAACAAAAAAAAAAgAAIAAAAAA=</HashCode>
+      <FileName>QueryParser\ParseException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.QueryParsers.QueryParser" Collapsed="true">
+    <Position X="5.5" Y="37.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ATWo1h2GgMEQ0GgChgh0BVWEAodFOigicioAgaCGgLM=</HashCode>
+      <FileName>QueryParser\QueryParser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.QueryParsers.QueryParserConstants" Collapsed="true">
+    <Position X="6.75" Y="36.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>DAIACACQCqgDIopAACAoAIAAIAIAAAEUgKAIAAAkAAg=</HashCode>
+      <FileName>QueryParser\QueryParserConstants.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.QueryParsers.QueryParserTokenManager" Collapsed="true">
+    <Position X="7.75" Y="37.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAECEJgBAIACAiYAIAAJoQAaAgxAAAIAAGLgoeAiAIA=</HashCode>
+      <FileName>QueryParser\QueryParserTokenManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.QueryParsers.Token" Collapsed="true">
+    <Position X="50.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAIACEQAAAAAAgEAAAAAAgAAEgAAIAAAA=</HashCode>
+      <FileName>QueryParser\Token.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.QueryParsers.TokenMgrError" Collapsed="true">
+    <Position X="52" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACIAAAAAAAAAAAAAAAEAAAIAAAAAAIAAAGIAAAAAA=</HashCode>
+      <FileName>QueryParser\TokenMgrError.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.BooleanClause" Collapsed="true">
+    <Position X="57.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAkgAAAAAAgAAAIAIgACAAAAAAAAAA=</HashCode>
+      <FileName>Search\BooleanClause.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.Occur" Collapsed="true">
+    <Position X="17.5" Y="19.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEABAAAAAAAAAAAAAAAAAABAAAAAE=</HashCode>
+      <FileName>Search\BooleanClause.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.BooleanQuery" Collapsed="true">
+    <Position X="23" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIIIQgAACAgAABAEgAAAAAQAAAACAKAEAAgJCAAAAHA=</HashCode>
+      <FileName>Search\BooleanQuery.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Lucene.Net.Search.BooleanScorer" Collapsed="true">
+    <Position X="15.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AECAEAAKAAAAAAgEEgAIAAAAoQBAAAAAAAIBAAAEAAA=</HashCode>
+      <FileName>Search\BooleanScorer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.BooleanScorer2" Collapsed="true">
+    <Position X="17.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEACAEAIAEAAACgAAQAKAYAAAQgAAAAAAAARCEEAAAA=</HashCode>
+      <FileName>Search\BooleanScorer2.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.CachingSpanFilter" Collapsed="true">
+    <Position X="32" Y="24.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ICAAACAAAAAAAAAEgAAAEAAAAAAAIIAAAAAAAACAAAA=</HashCode>
+      <FileName>Search\CachingSpanFilter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.CachingWrapperFilter" Collapsed="true">
+    <Position X="29.75" Y="22.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ICAAAAAAAAAAAAAEgAAAEAAAAAAAIMAAAAAAAAAAAAA=</HashCode>
+      <FileName>Search\CachingWrapperFilter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.Collector" Collapsed="true">
+    <Position X="39" Y="31.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAQAAAAAAAAAAAAAgAgAAAAAA=</HashCode>
+      <FileName>Search\Collector.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.ComplexExplanation" Collapsed="true">
+    <Position X="11.5" Y="40.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACCCoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Search\ComplexExplanation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.ConjunctionScorer" Collapsed="true">
+    <Position X="24.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAIAAAAAAhAAAAAAAAAAQBEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Search\ConjunctionScorer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.ConstantScoreQuery" Collapsed="true">
+    <Position X="45.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAEgAAAEAAAABAAAIAAAAAIAAAAADA=</HashCode>
+      <FileName>Search\ConstantScoreQuery.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.DefaultSimilarity" Collapsed="true">
+    <Position X="37.75" Y="26.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABACAAEAAAEAAAAQACAAAAAAAQAAAAAAUAAAAAAAAAA=</HashCode>
+      <FileName>Search\DefaultSimilarity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.DisjunctionMaxQuery" Collapsed="true">
+    <Position X="2.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACIAAAAACAAAAhgEgAAAAAAAAAAAAIAAAAAIAAAAADA=</HashCode>
+      <FileName>Search\DisjunctionMaxQuery.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Lucene.Net.Search.DisjunctionMaxScorer" Collapsed="true">
+    <Position X="1.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAIAAIAIAgAAIAIgAAAAQAAAAACAAAAAABAAAA=</HashCode>
+      <FileName>Search\DisjunctionMaxScorer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.DisjunctionSumScorer" Collapsed="true">
+    <Position X="4" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEgAAAAIAAAAAAgAAAAJAAAAAQAAAAAAAoAAAIDBAAE=</HashCode>
+      <FileName>Search\DisjunctionSumScorer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.DocIdSet" Collapsed="true">
+    <Position X="19" Y="32.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAABAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Search\DocIdSet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.DocIdSetIterator" Collapsed="true">
+    <Position X="16.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAIAAAAAgAAAAAIAAAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Search\DocIdSetIterator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.ExactPhraseScorer" Collapsed="true">
+    <Position X="19.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Search\ExactPhraseScorer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.Explanation" Collapsed="true">
+    <Position X="11.5" Y="39.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAGCAAAAAAAkAAAEIQAAAAAAAAAAACEAAAAgAAAAAAA=</HashCode>
+      <FileName>Search\Explanation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.CreationPlaceholder" Collapsed="true">
+    <Position X="69.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Search\FieldCache.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.StringIndex" Collapsed="true">
+    <Position X="50.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAAAAAAAACAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>Search\FieldCache.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.CacheEntry" Collapsed="true">
+    <Position X="66" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAgAAAAEAAEAAAAAAAAAACAAAAAAAAgAQAAAAE=</HashCode>
+      <FileName>Search\FieldCache.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.AnonymousClassByteParser" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="52" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAEAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Search\FieldCache.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Lucene.Net.Search.AnonymousClassShortParser" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="67.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAFAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Search\FieldCache.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Lucene.Net.Search.AnonymousClassIntParser" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="60.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAgAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Search\FieldCache.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Lucene.Net.Search.AnonymousClassFloatParser" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="57.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAEAAAAAAAAAAAQAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Search\FieldCache.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Lucene.Net.Search.AnonymousClassLongParser" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="64.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAABAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Search\FieldCache.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Lucene.Net.Search.AnonymousClassDoubleParser" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="53.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Search\FieldCache.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Lucene.Net.Search.AnonymousClassIntParser1" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="62.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAgAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Search\FieldCache.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Lucene.Net.Search.AnonymousClassFloatParser1" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="59" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAEAAAAAAAAAAAQAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Search\FieldCache.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Lucene.Net.Search.AnonymousClassLongParser1" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="66" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAABAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Search\FieldCache.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Lucene.Net.Search.AnonymousClassDoubleParser1" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="55.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Search\FieldCache.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Lucene.Net.Search.FieldCacheImpl" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="71.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACCAAAAAACBACAIAAAAAAAAAAQAkAAAAgCACAAAiCAA=</HashCode>
+      <FileName>Search\FieldCacheImpl.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Lucene.Net.Search.FieldCacheRangeFilter" Collapsed="true">
+    <Position X="50.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAGAAAAAAQAAAAAAAAAAAAAAAAAAAAAEAAAAQAAAQAg=</HashCode>
+      <FileName>Search\FieldCacheRangeFilter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.FieldCacheRangeFilter&lt;T&gt;" Collapsed="true">
+    <Position X="18.5" Y="22.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAigAAAQgAAAAAAEgAAAAQAAAAAAgIABAAAACAAAIAw=</HashCode>
+      <FileName>Search\FieldCacheRangeFilter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.FieldCacheTermsFilter" Collapsed="true">
+    <Position X="27.5" Y="22.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IACAQAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Search\FieldCacheTermsFilter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.FieldComparator" Collapsed="true">
+    <Position X="53.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAKAAAQAAAAoABAAAAAAhAAAAAAAA=</HashCode>
+      <FileName>Search\FieldComparator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.FieldComparatorSource" Collapsed="true">
+    <Position X="55.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Search\FieldComparatorSource.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.FieldDoc" Collapsed="true">
+    <Position X="8.5" Y="40.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAEAAAAAAACEAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Search\FieldDoc.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.FieldDocSortedHitQueue" Collapsed="true">
+    <Position X="22" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IACAAAgAgAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>Search\FieldDocSortedHitQueue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.FieldValueHitQueue" Collapsed="true">
+    <Position X="24.25" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAgAACgEAAAAAAAAAAAAAAQgAAAEAAAAAAAAAAACA=</HashCode>
+      <FileName>Search\FieldValueHitQueue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.Filter" Collapsed="true">
+    <Position X="25.25" Y="21.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Search\Filter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.FilteredDocIdSet" Collapsed="true">
+    <Position X="22.5" Y="33.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIiAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Search\FilteredDocIdSet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.FilteredDocIdSetIterator" Collapsed="true">
+    <Position X="31" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAgAIAAAAAAAAAAAIAAAAAQABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Search\FilteredDocIdSetIterator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.FilteredQuery" Collapsed="true">
+    <Position X="43.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAEgAAAEAAAABAAAIgAAAAIAAAAACA=</HashCode>
+      <FileName>Search\FilteredQuery.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.FilteredTermEnum" Collapsed="true">
+    <Position X="7.75" Y="22.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAEAAAACAAAAQEEkAAAAAAQAAAAAAAEAAAAAAAAgA=</HashCode>
+      <FileName>Search\FilteredTermEnum.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.FilterManager" Collapsed="true">
+    <Position X="71.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACQQAAAAEQAAAIAAABAAAAAEAAAACAAAwAAAAAAAQAA=</HashCode>
+      <FileName>Search\FilterManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.FuzzyQuery" Collapsed="true">
+    <Position X="11.75" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAiQAAEIAUgAAAAAAAAAAAAIAAEIAAIgAAACA=</HashCode>
+      <FileName>Search\FuzzyQuery.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.FuzzyTermEnum" Collapsed="true">
+    <Position X="5.5" Y="24.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAgAAAgCAAAAASEgAAAAIAQAgAAgAMAEAAAAAAAoA=</HashCode>
+      <FileName>Search\FuzzyTermEnum.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.HitQueue" Collapsed="true">
+    <Position X="19.75" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>Search\HitQueue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.IndexSearcher" Collapsed="true">
+    <Position X="31.5" Y="37" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAIIAAACCAIQAQAEACAAAAADAAJAEEAAAAAABAwAAA=</HashCode>
+      <FileName>Search\IndexSearcher.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.MatchAllDocsQuery" Collapsed="true">
+    <Position X="7.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEgAIAAAAAAAAAAIAAAAAIAAAAACA=</HashCode>
+      <FileName>Search\MatchAllDocsQuery.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.MultiPhraseQuery" Collapsed="true">
+    <Position X="9.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACKgIAAACCAAQAYEgAAAIAAAAAAAAIAAACAIAAAgACA=</HashCode>
+      <FileName>Search\MultiPhraseQuery.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.MultiSearcher" Collapsed="true">
+    <Position X="33.75" Y="37" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAACCQAIAQgEAAIEAgADAAIAAAAQAAAIAAgACA=</HashCode>
+      <FileName>Search\MultiSearcher.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.MultiTermQuery" Collapsed="true">
+    <Position X="16.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQCQAQECAAgCAAAAAAAAQIAIAAgAACAAAAAAA=</HashCode>
+      <FileName>Search\MultiTermQuery.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.RewriteMethod" Collapsed="true">
+    <Position X="59" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Search\MultiTermQuery.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.MultiTermQueryWrapperFilter&lt;T&gt;" Collapsed="true">
+    <Position X="23" Y="22.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAQEAAEgAAAAAAAAAAAAIAAAAAIAAAAAAA=</HashCode>
+      <FileName>Search\MultiTermQueryWrapperFilter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.NumericRangeFilter&lt;T&gt;" Collapsed="true">
+    <Position X="20.75" Y="24.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAEAAICAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>Search\NumericRangeFilter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.NumericRangeFilter" Collapsed="true">
+    <Position X="55.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAg=</HashCode>
+      <FileName>Search\NumericRangeFilter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.NumericRangeQuery&lt;T&gt;" Collapsed="true">
+    <Position X="18.5" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAEAEAARQQAAAEkAAICAAAAAAAAIAAAAAAAACIgAA=</HashCode>
+      <FileName>Search\NumericRangeQuery.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.NumericRangeQuery" Collapsed="true">
+    <Position X="57.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAg=</HashCode>
+      <FileName>Search\NumericRangeQuery.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.ParallelMultiSearcher" Collapsed="true">
+    <Position X="33.75" Y="38.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQgAAAAAAAAAAAAAAAAQAAAAAAgAAA=</HashCode>
+      <FileName>Search\ParallelMultiSearcher.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.PhrasePositions" Collapsed="true">
+    <Position X="67.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgCIBAAAAAAAAAAABAAIIAAAAAAAAAIAAAEABAIAAAA=</HashCode>
+      <FileName>Search\PhrasePositions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.PhraseQuery" Collapsed="true">
+    <Position X="27.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAKAAAAAACgAAAgEgAAAIAAAAAAAAoAAACAIAAAgACA=</HashCode>
+      <FileName>Search\PhraseQuery.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.PhraseQueue" Collapsed="true">
+    <Position X="26.5" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>Search\PhraseQueue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.PhraseScorer" Collapsed="true">
+    <Position X="21" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AMAAACAIEEAAAAjEAAEQQIAAAQAAAAAgAAACgCAAAiA=</HashCode>
+      <FileName>Search\PhraseScorer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.PositiveScoresOnlyCollector" Collapsed="true">
+    <Position X="42.5" Y="32.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAIQAAAAAAAAACAAAgAgAAAAAA=</HashCode>
+      <FileName>Search\PositiveScoresOnlyCollector.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.PrefixFilter" Collapsed="true">
+    <Position X="23" Y="24.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Search\PrefixFilter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.PrefixQuery" Collapsed="true">
+    <Position X="20.75" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAEgAAAAAACAAAAAoAAAAAAAAAAAAA=</HashCode>
+      <FileName>Search\PrefixQuery.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.PrefixTermEnum" Collapsed="true">
+    <Position X="3.25" Y="24.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAIAQgAAAgAAAAAAAAAAAgA=</HashCode>
+      <FileName>Search\PrefixTermEnum.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.Query" Collapsed="true">
+    <Position X="25.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAACAAAAQAEgABAAAAAQCAAAIAAAAAJAAAAADA=</HashCode>
+      <FileName>Search\Query.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Lucene.Net.Search.QueryTermVector" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="71.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAQAgwAwAAEAAAAAAAAAAAAAgAAAAAAAAAAgAA=</HashCode>
+      <FileName>Search\QueryTermVector.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Lucene.Net.Search.QueryWrapperFilter" Collapsed="true">
+    <Position X="16.25" Y="22.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAEgAAAAAAAAAAAAIAAAAAIAAAAAAA=</HashCode>
+      <FileName>Search\QueryWrapperFilter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.ReqExclScorer" Collapsed="true">
+    <Position X="8.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAABAAIAAAAAAgAAAAIAAAAAQAAEAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Search\ReqExclScorer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.ReqOptSumScorer" Collapsed="true">
+    <Position X="10.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAIAAAAAEgAAAAAAAAAAQAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Search\ReqOptSumScorer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.ScoreCachingWrappingScorer" Collapsed="true">
+    <Position X="13" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAoAAIAAAAAAgAAAAIAAAAIQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Search\ScoreCachingWrappingScorer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.ScoreDoc" Collapsed="true">
+    <Position X="8.5" Y="39.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgEAAAAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Search\ScoreDoc.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.Scorer" Collapsed="true">
+    <Position X="14.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>Search\Scorer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.Searcher" Collapsed="true">
+    <Position X="32.75" Y="35.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAACCAAAAQAAAAAAAAADAAIIAAAAAIAAACgAKA=</HashCode>
+      <FileName>Search\Searcher.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Lucene.Net.Search.Similarity" Collapsed="true">
+    <Position X="36.75" Y="25.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABACAAEAIAEAEAAAALAgIAAAAQAQgAAAQAIAAAgAAAA=</HashCode>
+      <FileName>Search\Similarity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.SimilarityDelegator" Collapsed="true">
+    <Position X="35.5" Y="26.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABACAAEAAAEQAAAAACAAAAAAAQAAgAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Search\SimilarityDelegator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.SingleTermEnum" Collapsed="true">
+    <Position X="12.25" Y="24.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAgAAAAAAQAAAAAAAAgAAAAAAAgA=</HashCode>
+      <FileName>Search\SingleTermEnum.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.SloppyPhraseScorer" Collapsed="true">
+    <Position X="22" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAAADEAAAAAAAAAACAAgAQAAgA=</HashCode>
+      <FileName>Search\SloppyPhraseScorer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.Sort" Collapsed="true">
+    <Position X="57.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAEgAAAACAAAAAAAIAAAAAAEAAAARA=</HashCode>
+      <FileName>Search\Sort.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.SortField" Collapsed="true">
+    <Position X="60.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EACkAAEACAIAQAAEgAAQBAIgAABJAIoAQQgCABAAoAA=</HashCode>
+      <FileName>Search\SortField.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.SpanFilter" Collapsed="true">
+    <Position X="33.25" Y="22.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Search\SpanFilter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.SpanFilterResult" Collapsed="true">
+    <Position X="62.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIgAAAAIAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Search\SpanFilterResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.SpanQueryFilter" Collapsed="true">
+    <Position X="34.25" Y="24.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAACAAAAAAAAAEgAAAAAAAAAAAAIgAAAAIAAAAAAA=</HashCode>
+      <FileName>Search\SpanQueryFilter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.TermQuery" Collapsed="true">
+    <Position X="47.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEgAAAAAAAAAAQAIAAEAAIAAAAACA=</HashCode>
+      <FileName>Search\TermQuery.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.TermRangeFilter" Collapsed="true">
+    <Position X="25.25" Y="24.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAABAAACAAAAAAAAAABQAAAAIAAgAQ=</HashCode>
+      <FileName>Search\TermRangeFilter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.TermRangeQuery" Collapsed="true">
+    <Position X="14" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gACAAAAAAQAEAAAMhAAACAAAAAAAAIABAAAACIAAgAw=</HashCode>
+      <FileName>Search\TermRangeQuery.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.TermRangeTermEnum" Collapsed="true">
+    <Position X="7.75" Y="24.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAEAAAAEAAAAAgAAAAIAUAAAAAAAAAAACAAAAgg=</HashCode>
+      <FileName>Search\TermRangeTermEnum.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.TermScorer" Collapsed="true">
+    <Position X="6.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAEAAAIAAASAAiEAAAIAABAAQABAAEgAAAAAAAAACE=</HashCode>
+      <FileName>Search\TermScorer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.TimeLimitingCollector" Collapsed="true">
+    <Position X="35.75" Y="32.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAgAACAAAQCABASRgABAAAAoCgAAAAAA=</HashCode>
+      <FileName>Search\TimeLimitingCollector.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.TopDocs" Collapsed="true">
+    <Position X="39.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAIAAAQAAAAAAAAAAgAAAAAAAAAAAAAAAAAAY=</HashCode>
+      <FileName>Search\TopDocs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.TopDocsCollector&lt;T&gt;" Collapsed="true">
+    <Position X="39" Y="32.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAAAAAIAgAAACIAIAAAEAAAAAAAA=</HashCode>
+      <FileName>Search\TopDocsCollector.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.TopFieldCollector" Collapsed="true">
+    <Position X="38" Y="34.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAACAAAgBAACAAAQAAAAAAAIAIAAAFAgAAAAAA=</HashCode>
+      <FileName>Search\TopFieldCollector.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.TopFieldDocs" Collapsed="true">
+    <Position X="39.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Search\TopFieldDocs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.TopScoreDocCollector" Collapsed="true">
+    <Position X="40.25" Y="34.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAACAAIQAAAAAAAAEAAAAkAAAAAAAA=</HashCode>
+      <FileName>Search\TopScoreDocCollector.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.Weight" Collapsed="true">
+    <Position X="12.5" Y="31.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAgAEAAAAAAABAAAAAgAAAAgEAAAAAA=</HashCode>
+      <FileName>Search\Weight.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.WildcardQuery" Collapsed="true">
+    <Position X="16.25" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACQAAAAAEgAAABAAAAAAQAIAAEAAAAQAAAAA=</HashCode>
+      <FileName>Search\WildcardQuery.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.WildcardTermEnum" Collapsed="true">
+    <Position X="10" Y="24.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACIAAAAAAAAAAAAAgAAAEIAQBgAAQAIAAAAAAAgAgA=</HashCode>
+      <FileName>Search\WildcardTermEnum.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.Function.ByteFieldSource" Collapsed="true">
+    <Position X="3.25" Y="31.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAICAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAIIAA=</HashCode>
+      <FileName>Search\Function\ByteFieldSource.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.Function.CustomScoreProvider" Collapsed="true">
+    <Position X="50.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAQAQA=</HashCode>
+      <FileName>Search\Function\CustomScoreProvider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.Function.CustomScoreQuery" Collapsed="true">
+    <Position X="25.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACIAAAAgEhAAAAAYAAAIAAIAAAAgIAAAAATA=</HashCode>
+      <FileName>Search\Function\CustomScoreQuery.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Lucene.Net.Search.Function.DocValues" Collapsed="true">
+    <Position X="64.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAABgAAgAAAAACUABEAAABAFAAAAAEAAAAIAAAAAAk=</HashCode>
+      <FileName>Search\Function\DocValues.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.Function.FieldCacheSource" Collapsed="true">
+    <Position X="4.25" Y="29.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAKCAAAAIAAgAAAAgAAAAAAAAAAAAIAAAAAAAAAIAAA=</HashCode>
+      <FileName>Search\Function\FieldCacheSource.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.Function.FieldScoreQuery" Collapsed="true">
+    <Position X="5" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>Search\Function\FieldScoreQuery.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.Function.FloatFieldSource" Collapsed="true">
+    <Position X="5.5" Y="31.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAICAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAIIAA=</HashCode>
+      <FileName>Search\Function\FloatFieldSource.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.Function.IntFieldSource" Collapsed="true">
+    <Position X="7.75" Y="31.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAICAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAIIAA=</HashCode>
+      <FileName>Search\Function\IntFieldSource.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.Function.OrdFieldSource" Collapsed="true">
+    <Position X="10" Y="29.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAIAAgAAAAgAAAAAAAAAEAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Search\Function\OrdFieldSource.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.Function.ReverseOrdFieldSource" Collapsed="true">
+    <Position X="12.25" Y="29.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAIAAgAAAAgAAAAAAAAAEAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Search\Function\ReverseOrdFieldSource.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.Function.ShortFieldSource" Collapsed="true">
+    <Position X="1" Y="31.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAICAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAIIAA=</HashCode>
+      <FileName>Search\Function\ShortFieldSource.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.Function.ValueSource" Collapsed="true">
+    <Position X="6.5" Y="28.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAgAAAEgAAAAAAAAAAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Search\Function\ValueSource.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.Function.ValueSourceQuery" Collapsed="true">
+    <Position X="5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAEgAAAAAAAAAAAQIAAAAAIAAAAADA=</HashCode>
+      <FileName>Search\Function\ValueSourceQuery.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.Payloads.AveragePayloadFunction" Collapsed="true">
+    <Position X="23.75" Y="36.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAgAgAAAAAAAAAAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Search\Payloads\AveragePayloadFunction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.Payloads.MaxPayloadFunction" Collapsed="true">
+    <Position X="26" Y="36.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAgAgAAAAAAAAAAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Search\Payloads\MaxPayloadFunction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.Payloads.MinPayloadFunction" Collapsed="true">
+    <Position X="28.25" Y="36.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAgAgAAAAAAAAAAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Search\Payloads\MinPayloadFunction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.Payloads.PayloadFunction" Collapsed="true">
+    <Position X="26" Y="35.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAgAgAAAAAAAAAAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Search\Payloads\PayloadFunction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.Payloads.PayloadNearQuery" Collapsed="true">
+    <Position X="34.25" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEggAAAIAAAAAAAIAAAAAAAAAAADA=</HashCode>
+      <FileName>Search\Payloads\PayloadNearQuery.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Lucene.Net.Search.Payloads.PayloadSpanUtil" Collapsed="true">
+    <Position X="66" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAAAAACAAAAAAAAAAQAAI=</HashCode>
+      <FileName>Search\Payloads\PayloadSpanUtil.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.Payloads.PayloadTermQuery" Collapsed="true">
+    <Position X="41" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAggAAAAAAAAAEAIAAAAAAAAAAACA=</HashCode>
+      <FileName>Search\Payloads\PayloadTermQuery.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.Spans.FieldMaskingSpanQuery" Collapsed="true">
+    <Position X="29.75" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AICAAAAACAAAAAAEggAAAAAAAAAAAIAAAgAIAABAgCA=</HashCode>
+      <FileName>Search\Spans\FieldMaskingSpanQuery.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.Spans.NearSpansOrdered" Collapsed="true">
+    <Position X="38" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AoYAABCAAmQAJACEQAAAAAEACAABAgACAAMIEAAAUBA=</HashCode>
+      <FileName>Search\Spans\NearSpansOrdered.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.Spans.NearSpansUnordered" Collapsed="true">
+    <Position X="40.25" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgIAEAQAEGRABACEEAFAAAIESAABAAAAAiEIABAAAgA=</HashCode>
+      <FileName>Search\Spans\NearSpansUnordered.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.Spans.SpanFirstQuery" Collapsed="true">
+    <Position X="32" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAgACCAAAAAAEgAAAAAAAAAAAAIAAAAAIAABAgBI=</HashCode>
+      <FileName>Search\Spans\SpanFirstQuery.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Lucene.Net.Search.Spans.SpanNearQuery" Collapsed="true">
+    <Position X="34.25" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAQAAACAAAQgAEgAAAAAQAAAAAAIACACAIAABggBA=</HashCode>
+      <FileName>Search\Spans\SpanNearQuery.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Lucene.Net.Search.Spans.SpanNotQuery" Collapsed="true">
+    <Position X="36.5" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAMgIAACACAAAAAAIAAAAAIAABAgBA=</HashCode>
+      <FileName>Search\Spans\SpanNotQuery.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Lucene.Net.Search.Spans.SpanOrQuery" Collapsed="true">
+    <Position X="38.75" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAQAAACAAAAAAEgAAAAAQAAAAAAIAAAAAIAABAgBA=</HashCode>
+      <FileName>Search\Spans\SpanOrQuery.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Lucene.Net.Search.Spans.SpanQuery" Collapsed="true">
+    <Position X="35.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAgCA=</HashCode>
+      <FileName>Search\Spans\SpanQuery.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.Spans.Spans" Collapsed="true">
+    <Position X="38" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgIAAAAAACAAAAAAAAAAAAAACAABAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Search\Spans\Spans.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.Spans.SpanScorer" Collapsed="true">
+    <Position X="26.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEBAACAIAAAAAEiAAAAIQAAABQAAAAAgAAAAAAAAACA=</HashCode>
+      <FileName>Search\Spans\SpanScorer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.Spans.SpanTermQuery" Collapsed="true">
+    <Position X="41" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEgAAAAAAAAAAQAIAAEAAIAABAgAA=</HashCode>
+      <FileName>Search\Spans\SpanTermQuery.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.Spans.SpanWeight" Collapsed="true">
+    <Position X="12.5" Y="32.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAgAAAgAEAAAQAAABAQAAAkAAAAoEAAAAoA=</HashCode>
+      <FileName>Search\Spans\SpanWeight.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Search.Spans.TermSpans" Collapsed="true">
+    <Position X="35.75" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgIAACAAACAAAAAkBAAIIAAACAARAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Search\Spans\TermSpans.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Store.AlreadyClosedException" Collapsed="true">
+    <Position X="50.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Store\AlreadyClosedException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Store.BufferedIndexInput" Collapsed="true">
+    <Position X="32" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAEAAAAAAAAABAAASgIAEAAACACAAEAAAgBAAAAEgBA=</HashCode>
+      <FileName>Store\BufferedIndexInput.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Lucene.Net.Store.BufferedIndexOutput" Collapsed="true">
+    <Position X="34.75" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAABAAAGAIAAABCSAAAAAAgAABAAAAIgAA=</HashCode>
+      <FileName>Store\BufferedIndexOutput.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Store.ChecksumIndexInput" Collapsed="true">
+    <Position X="34.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAABAAAGAAAAgBAAAACAEAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Store\CheckSumIndexInput.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Store.ChecksumIndexOutput" Collapsed="true">
+    <Position X="37" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAACAACAABAAAGAAAAgBAQAACAAAgAAAAAAAIAAQ=</HashCode>
+      <FileName>Store\CheckSumIndexOutput.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Store.Directory" Collapsed="true">
+    <Position X="6.5" Y="32.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ggAAAAIAACABAACkDEAAAAgAEoCAAAABAAEAASCAEAA=</HashCode>
+      <FileName>Store\Directory.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Lucene.Net.Store.FileSwitchDirectory" Collapsed="true">
+    <Position X="5.5" Y="33.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAIACCAAAAiAFEAAACgAEACAAAABEAEAkCAAAAA=</HashCode>
+      <FileName>Store\FileSwitchDirectory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Store.FSDirectory" Collapsed="true">
+    <Position X="10" Y="33.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EgAgQBIAACAQIAiEDEAAAAgAEACAQAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Store\FSDirectory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Store.FSLockFactory" Collapsed="true">
+    <Position X="31.25" Y="29.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAEAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Store\FSLockFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Store.IndexInput" Collapsed="true">
+    <Position X="33" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAFAACCAAQEABAEgAAAUAAAAAgQIKAABA=</HashCode>
+      <FileName>Store\IndexInput.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Lucene.Net.Store.IndexOutput" Collapsed="true">
+    <Position X="37" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAACgARCAACoAQAABAQABAAAAwBAAAAACIAAA=</HashCode>
+      <FileName>Store\IndexOutput.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Lucene.Net.Store.Lock" Collapsed="true">
+    <Position X="32" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAQAAAAAAAAAIAgAACAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>Store\Lock.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Store.LockFactory" Collapsed="true">
+    <Position X="32.25" Y="28.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABCAAgAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Store\LockFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Store.LockObtainFailedException" Collapsed="true">
+    <Position X="52" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Store\LockObtainFailedException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Store.LockReleaseFailedException" Collapsed="true">
+    <Position X="53.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Store\LockReleaseFailedException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Store.LockStressTest" Collapsed="true">
+    <Position X="55.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Store\LockStressTest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Store.LockVerifyServer" Collapsed="true">
+    <Position X="57.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Store\LockVerifyServer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Store.MMapDirectory" Collapsed="true">
+    <Position X="10" Y="35.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAEAAAEAAQSAAAAAAAAACAAAAAAAIAAAAAQAA=</HashCode>
+      <FileName>Store\MMapDirectory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Store.NativeFSLockFactory" Collapsed="true">
+    <Position X="32.25" Y="31.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Store\NativeFSLockFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Store.NativeFSLock" Collapsed="true">
+    <Position X="35.5" Y="19.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAGAAAAAAAIAAUAIBCAAAAAAAAAAAQAQAAABAAAAA=</HashCode>
+      <FileName>Store\NativeFSLockFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Store.NIOFSDirectory" Collapsed="true">
+    <Position X="12.25" Y="35.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Store\NIOFSDirectory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Store.NoLockFactory" Collapsed="true">
+    <Position X="27.75" Y="29.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAFAAAgAAAAAAAAAQAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Store\NoLockFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Store.NoLock" Collapsed="true">
+    <Position X="28.75" Y="19.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAEAIAAAAAAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>Store\NoLockFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Store.NoSuchDirectoryException" Collapsed="true">
+    <Position X="50.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Store\NoSuchDirectoryException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Store.RAMDirectory" Collapsed="true">
+    <Position X="1" Y="33.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAMAACAAAQAABEAAgAgAEACAAABAAAEACAAAAAA=</HashCode>
+      <FileName>Store\RAMDirectory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Store.RAMFile" Collapsed="true">
+    <Position X="50.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>MAQgAAAAAAAQAQAAAEAAgABCAAAAAgAAAgAAgAAAAAA=</HashCode>
+      <FileName>Store\RAMFile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Store.RAMInputStream" Collapsed="true">
+    <Position X="36.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAACAABACACEKAAABACAAAAEAABAAAAAAQgAA=</HashCode>
+      <FileName>Store\RAMInputStream.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Store.RAMOutputStream" Collapsed="true">
+    <Position X="39.25" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAACAABACAGAKAgABASAAAAAAgBAAAIAAYgAA=</HashCode>
+      <FileName>Store\RAMOutputStream.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Store.SimpleFSDirectory" Collapsed="true">
+    <Position X="7.75" Y="35.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Store\SimpleFSDirectory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Store.SimpleFSLockFactory" Collapsed="true">
+    <Position X="30" Y="31.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Store\SimpleFSLockFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Store.SimpleFSLock" Collapsed="true">
+    <Position X="31" Y="19.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAEAIBAAAAAAAAgAAAAAAAAABAAAAA=</HashCode>
+      <FileName>Store\SimpleFSLockFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Store.SingleInstanceLockFactory" Collapsed="true">
+    <Position X="34.5" Y="29.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAgAAAAAAAAAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Store\SingleInstanceLockFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Store.SingleInstanceLock" Collapsed="true">
+    <Position X="33.25" Y="19.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAEAIAAAAAAAAAAAAAAAhAAABAAAAA=</HashCode>
+      <FileName>Store\SingleInstanceLockFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Store.VerifyingLockFactory" Collapsed="true">
+    <Position X="36.75" Y="29.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAQAgAAAAAAAAAAAAAAgAAAgAAAAAAgA=</HashCode>
+      <FileName>Store\VerifyingLockFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Support.AppSettings" Collapsed="true">
+    <Position X="69.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABABAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Support\AppSettings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Support.AttributeImplItem" Collapsed="true">
+    <Position X="50.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Support\AttributeImplItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Support.BitSetSupport" Collapsed="true">
+    <Position X="52" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAJAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Support\BitSetSupport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Support.BuildType" Collapsed="true">
+    <Position X="60.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Support\BuildType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Support.Character" Collapsed="true">
+    <Position X="67.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAABAAAAAAABAAAAAAAAAACAAAAEAAgAAAAAAAAA=</HashCode>
+      <FileName>Support\Character.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Support.CloseableThreadLocalProfiler" Collapsed="true">
+    <Position X="55.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAAAAQAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Support\CloseableThreadLocalProfiler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Support.CollectionsHelper" Collapsed="true">
+    <Position X="57.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAQQAAAAgAQQAAAAACAACAAAAAAEAAAQAAA=</HashCode>
+      <FileName>Support\CollectionsHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Support.Compare" Collapsed="true">
+    <Position X="59" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>Support\Compare.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Support.CRC32" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="67.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAABBAAAAAAAAAAAAAIIAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Support\CRC32.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Lucene.Net.Support.Cryptography" Collapsed="true">
+    <Position X="71.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Support\Cryptography.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Support.Deflater" Collapsed="true">
+    <Position X="55.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIIAAAAAAAAEAAAAEAQAAAAAAAACAAABAAAAQBQAAg=</HashCode>
+      <FileName>Support\Deflater.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Support.Double" Collapsed="true">
+    <Position X="66" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Support\Double.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Support.EquatableList&lt;T&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="67.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAgAAAAAIAAAAAAAAAEABA=</HashCode>
+      <FileName>Support\EquatableList.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Lucene.Net.Support.FileSupport" Collapsed="true">
+    <Position X="69.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAACAAAAAAAAAAAAAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>Support\FileSupport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Support.GeneralKeyedCollection&lt;TKey, TItem&gt;" Collapsed="true">
+    <Position X="52" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAEAACAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Support\GeneralKeyedCollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Support.HashMap&lt;TKey, TValue&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="53.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAIAAAQAAAAEABAQCAQBBBQAAAAAAAAEAAIgIABAABE=</HashCode>
+      <FileName>Support\HashMap.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Lucene.Net.Support.Inflater" Collapsed="true">
+    <Position X="67.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEIAAAEAAAAACAAABAAAAAAQAAA=</HashCode>
+      <FileName>Support\Inflater.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Support.Number" Collapsed="true">
+    <Position X="52" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAgQABAAAAAAAAEABAAAAAAAAABAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Support\Number.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Support.OS" Collapsed="true">
+    <Position X="60.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAIAAAAAAAAAAAAAAAACAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Support\OS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Support.SharpZipLib" Collapsed="true">
+    <Position X="50.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAEAAAAgAAAA=</HashCode>
+      <FileName>Support\SharpZipLib.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Support.Single" Collapsed="true">
+    <Position X="52" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAgAAAAAAAAAAAEAAAAAEEAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Support\Single.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Support.TextSupport" Collapsed="true">
+    <Position X="67.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Support\TextSupport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Support.ThreadClass" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="69.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAQASAIACgEgACAAAQAAAAAAKAAQAQAAAgCAio=</HashCode>
+      <FileName>Support\ThreadClass.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Lucene.Net.Support.ThreadLock" Collapsed="true">
+    <Position X="71.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAIAAQAAAAAAAAAAAEAgAAIAAAAAAAAAA=</HashCode>
+      <FileName>Support\ThreadLock.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Support.WeakDictionary&lt;TKey, TValue&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="59" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>KAIAAAIAAAAEABAQGAQABAQAAAAAAAAEAAIgKABAQAA=</HashCode>
+      <FileName>Support\WeakDictionary.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Lucene.Net.Support.WeakHashTable" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="60.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAIAAAAwABAACAAAAAQAAAAAAAAGAAAAAAAAYAA=</HashCode>
+      <FileName>Support\WeakHashTable.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Lucene.Net.Support.WeakReference&lt;T&gt;" Collapsed="true">
+    <Position X="62.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Support\WeakReference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Util.ArrayUtil" Collapsed="true">
+    <Position X="71.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAJAACAgAAAAAAAgAAAAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>Util\ArrayUtil.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Util.Attribute" Collapsed="true">
+    <Position X="7.75" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEgAAAAAAAAAAAAIAAAAAAAABAIBA=</HashCode>
+      <FileName>Util\Attribute.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Lucene.Net.Util.AttributeSource" Collapsed="true">
+    <Position X="16.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIIAABAEAAAgEBAEoAAAEAAAAAIREIICAABAAAEAAAA=</HashCode>
+      <FileName>Util\AttributeSource.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Util.AverageGuessMemoryModel" Collapsed="true">
+    <Position X="31.5" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQBAAAAAAAAAAAQAAAAAAAAAAAEAIAAAAAAQA=</HashCode>
+      <FileName>Util\AverageGuessMemoryModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Util.BitUtil" Collapsed="true">
+    <Position X="53.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAMABQAAAAAAAgAAABMAAAAgACBAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Util\BitUtil.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Util.BitVector" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="55.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACABAAhANABIAAAAQAAAAAIAAAAEQFAIFAABA=</HashCode>
+      <FileName>Util\BitVector.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Lucene.Net.Util.CloseableThreadLocal&lt;T&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="52" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAABABAGAAAAAAAAAEAAAAAAAQAAACAAAA=</HashCode>
+      <FileName>Util\CloseableThreadLocal.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Lucene.Net.Util.CloseableThreadLocalExtensions" Collapsed="true">
+    <Position X="53.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABABAAAAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Util\CloseableThreadLocal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Util.Constants" Collapsed="true">
+    <Position X="64.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAEAAAGAAAAAgACAAABAgAQAAgQIAEQBCA=</HashCode>
+      <FileName>Util\Constants.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Util.DocIdBitSet" Collapsed="true">
+    <Position X="18" Y="33.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAIAAAAAAAAAAAAAAAACAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Util\DocIdBitSet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Util.FieldCacheSanityChecker" Collapsed="true">
+    <Position X="52" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAIACAAAAAAAAgAAAEAAAAAAAACACA=</HashCode>
+      <FileName>Util\FieldCacheSanityChecker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Util.IdentityDictionary&lt;TKey, TValue&gt;" Collapsed="true">
+    <Position X="55.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Util\IdentityDictionary.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Util.IndexableBinaryStringTools" Collapsed="true">
+    <Position X="57.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CIAAAAAAAABAAAAAAAAAAAAAAAAAAAgAAAAAQAAAAAA=</HashCode>
+      <FileName>Util\IndexableBinaryStringTools.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Util.MapOfSets&lt;TKey, TValue&gt;" Collapsed="true">
+    <Position X="62.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAABAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Util\MapOfSets.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Util.MemoryModel" Collapsed="true">
+    <Position X="31.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAAAAQAAAAAAAAAAAEAAAAAAAAQA=</HashCode>
+      <FileName>Util\MemoryModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Util.NumericUtils" Collapsed="true">
+    <Position X="59" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>FBAAEBABAAAAImICABAAAAAAAAAAAAAAAIIiBEAEAAA=</HashCode>
+      <FileName>Util\NumericUtils.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Util.OpenBitSet" Collapsed="true">
+    <Position X="20.25" Y="33.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>JABEACAggREEhAFAgFAEDAEGAECAwIMgABAAAaBQCpA=</HashCode>
+      <FileName>Util\OpenBitSet.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Lucene.Net.Util.OpenBitSetDISI" Collapsed="true">
+    <Position X="20.25" Y="35.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAIAAAAAAAABAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Util\OpenBitSetDISI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Util.OpenBitSetIterator" Collapsed="true">
+    <Position X="28.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gEAAAAAJAAAAAAwAAAAAAAAAgQQAAAAAICAAAAAAAAE=</HashCode>
+      <FileName>Util\OpenBitSetIterator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Util.Parameter" Collapsed="true">
+    <Position X="17.5" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAIAAAAAEgAAAAAAAAAAEAIAAAAAAAAAAAiA=</HashCode>
+      <FileName>Util\Parameter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Lucene.Net.Util.PriorityQueue&lt;T&gt;" Collapsed="true">
+    <Position X="24.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAggAAAAgQAAAIAAAgAAAACKCQAAAAAAAABAgCA=</HashCode>
+      <FileName>Util\PriorityQueue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Util.RamUsageEstimator" Collapsed="true">
+    <Position X="52" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAgQgQQAEAAgAAAAAAAAAAEAAIIIABAAAAA=</HashCode>
+      <FileName>Util\RamUsageEstimator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Util.ReaderUtil" Collapsed="true">
+    <Position X="55.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Util\ReaderUtil.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Util.ScorerDocQueue" Collapsed="true">
+    <Position X="60.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEgAAAAAgAAAAIAAAhAAAACKAQAAAABEAgRAEIg=</HashCode>
+      <FileName>Util\ScorerDocQueue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Util.SimpleStringInterner" Collapsed="true">
+    <Position X="12.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Util\SimpleStringInterner.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Util.SmallFloat" Collapsed="true">
+    <Position X="53.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAAAAAAAAACAAAAAAIAAIAAAAAAIIAAA=</HashCode>
+      <FileName>Util\SmallFloat.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Util.SortedVIntList" Collapsed="true">
+    <Position X="15.75" Y="33.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAgAABAIAAAQAAAACAAggAAAUAAABEQAA=</HashCode>
+      <FileName>Util\SortedVIntList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Util.SorterTemplate" Collapsed="true">
+    <Position X="59" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAABgEBAAIAAAAAAAAAAAEAABAQAAAABAAAAAAAg=</HashCode>
+      <FileName>Util\SorterTemplate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Util.StringHelper" Collapsed="true">
+    <Position X="71.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAgAAAAAAAAAAAEEAAAAAAA=</HashCode>
+      <FileName>Util\StringHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Util.StringInterner" Collapsed="true">
+    <Position X="12.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Util\StringInterner.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Util.ToStringUtils" Collapsed="true">
+    <Position X="53.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Util\ToStringUtils.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Util.UnicodeUtil" Collapsed="true">
+    <Position X="55.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAABACAACAAAAwBAAAAAACAAAAAQAAAAAAAAIAAAAA=</HashCode>
+      <FileName>Util\UnicodeUtil.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Util.VersionEnumExtensions" Collapsed="true">
+    <Position X="57.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>Util\Version.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Util.Cache.Cache&lt;TKey, TValue&gt;" Collapsed="true">
+    <Position X="15.5" Y="35.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAACAEAABABAAAAAAAAAAAAAAAAAAAAACAAAg=</HashCode>
+      <FileName>Util\Cache\Cache.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Lucene.Net.Util.Cache.SimpleLRUCache&lt;TKey, TValue&gt;" Collapsed="true">
+    <Position X="15.5" Y="38.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAABABAAAIAAAAAACAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Util\Cache\SimpleLRUCache.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lucene.Net.Util.Cache.SimpleMapCache&lt;TKey, TValue&gt;" Collapsed="true">
+    <Position X="15.5" Y="36.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAEAAAACAEAABABAAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Util\Cache\SimpleMapCache.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="Lucene.Net.Index.TermVectorOffsetInfo" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="52" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAQgAgAAAAAAAAAAIAAAAIABAAAAiQ=</HashCode>
+      <FileName>Index\TermVectorOffsetInfo.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Struct>
+  <Struct Name="Lucene.Net.Search.FieldCache_Fields" Collapsed="true">
+    <Position X="50.25" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAIAAAQAAoAAAIAEAAAQgEAAAAAAAAAAAAIIAAAAA=</HashCode>
+      <FileName>Search\FieldCache.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="Lucene.Net.Analysis.Tokenattributes.IFlagsAttribute" Collapsed="true">
+    <Position X="1" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Analysis\Tokenattributes\IFlagsAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Lucene.Net.Analysis.Tokenattributes.IOffsetAttribute" Collapsed="true">
+    <Position X="3.25" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAQgAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Analysis\Tokenattributes\IOffsetAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Lucene.Net.Analysis.Tokenattributes.IPayloadAttribute" Collapsed="true">
+    <Position X="5.5" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Analysis\Tokenattributes\IPayloadAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Lucene.Net.Analysis.Tokenattributes.IPositionIncrementAttribute" Collapsed="true">
+    <Position X="7.75" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Analysis\Tokenattributes\IPositionIncrementAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Lucene.Net.Analysis.Tokenattributes.ITermAttribute" Collapsed="true">
+    <Position X="10" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAgAAAAAQQAAAAAAAAAAAAAAAEAAAAAAAAgA=</HashCode>
+      <FileName>Analysis\Tokenattributes\ITermAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Lucene.Net.Analysis.Tokenattributes.ITypeAttribute" Collapsed="true">
+    <Position X="12.25" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Analysis\Tokenattributes\ITypeAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Lucene.Net.Documents.IFieldable" Collapsed="true">
+    <Position X="57.25" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAACAAAAAAAECAAAAQQhQAAgACAwQEAQAAABIAA=</HashCode>
+      <FileName>Document\Fieldable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Lucene.Net.Documents.FieldSelector" Collapsed="true">
+    <Position X="52" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Document\FieldSelector.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Lucene.Net.Index.IndexDeletionPolicy" Collapsed="true">
+    <Position X="59" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAABAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>Index\IndexDeletionPolicy.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Lucene.Net.Index.TermDocs" Collapsed="true">
+    <Position X="5.5" Y="40.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IgAAAAAAAAAAAAAACAAAAAAgCAAAAAAAAAEAAACAAAA=</HashCode>
+      <FileName>Index\TermDocs.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Lucene.Net.Index.ITermFreqVector" Collapsed="true">
+    <Position X="33.5" Y="39.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAgQAgAAAAAAAAAAAAAAAAgAAAAAAAAAAgAA=</HashCode>
+      <FileName>Index\TermFreqVector.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Lucene.Net.Index.TermPositions" Collapsed="true">
+    <Position X="5.5" Y="42" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAAAAAAACAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Index\TermPositions.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Lucene.Net.Index.TermPositionVector" Collapsed="true">
+    <Position X="33.5" Y="40.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>Index\TermPositionVector.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Lucene.Net.Messages.INLSException" Collapsed="true">
+    <Position X="60.75" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Messages\INLSException.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Lucene.Net.Messages.Message" Collapsed="true">
+    <Position X="64.25" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAgEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Messages\Message.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Lucene.Net.QueryParsers.ICharStream" Collapsed="true">
+    <Position X="53.75" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgBAAAAAAAAAAQACAABAAAAAAAAIIRAAAAAAIAABAAI=</HashCode>
+      <FileName>QueryParser\CharStream.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Lucene.Net.Search.FieldCache" Collapsed="true">
+    <Position X="50.25" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAACBACAIAAAAAAAAAAQAkAAAAgCAAAAACCAA=</HashCode>
+      <FileName>Search\FieldCache.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Lucene.Net.Search.Parser" Collapsed="true">
+    <Position X="6.5" Y="25.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Search\FieldCache.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Lucene.Net.Search.ByteParser" Collapsed="true">
+    <Position X="1" Y="26.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Search\FieldCache.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Lucene.Net.Search.ShortParser" Collapsed="true">
+    <Position X="3.25" Y="26.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Search\FieldCache.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Lucene.Net.Search.IntParser" Collapsed="true">
+    <Position X="5.5" Y="26.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Search\FieldCache.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Lucene.Net.Search.FloatParser" Collapsed="true">
+    <Position X="7.75" Y="26.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Search\FieldCache.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Lucene.Net.Search.LongParser" Collapsed="true">
+    <Position X="10" Y="26.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Search\FieldCache.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Lucene.Net.Search.DoubleParser" Collapsed="true">
+    <Position X="12.25" Y="26.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Search\FieldCache.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Lucene.Net.Search.Searchable" Collapsed="true">
+    <Position X="66" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAQAAAAAAAAADAAIIAAAAAAAAACgAAA=</HashCode>
+      <FileName>Search\Searchable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Lucene.Net.Support.IChecksum" Collapsed="true">
+    <Position X="55.5" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Support\IChecksum.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Lucene.Net.Support.IThreadRunnable" Collapsed="true">
+    <Position X="62.5" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Support\IThreadRunnable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Lucene.Net.Util.IAttribute" Collapsed="true">
+    <Position X="6.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Util\IAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Lucene.Net.Documents.FieldSelectorResult" Collapsed="true">
+    <Position X="50.25" Y="15" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAIAAAAAAAAAAAAAEAAAAIAAABAAAAAAAAAAAgE=</HashCode>
+      <FileName>Document\FieldSelectorResult.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Lucene.Net.Util.Version" Collapsed="true">
+    <Position X="52" Y="15" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAABAAAAAEAA=</HashCode>
+      <FileName>Util\Version.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>

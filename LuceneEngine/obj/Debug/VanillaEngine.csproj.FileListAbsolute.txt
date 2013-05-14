@@ -1,0 +1,5 @@
+C:\Users\吴晨\我的项目\build\bin\core\Debug\VanillaEngine.dll
+C:\Users\吴晨\我的项目\build\bin\core\Debug\VanillaEngine.pdb
+C:\Users\吴晨\我的项目\Vanilla\LuceneEngine\obj\Debug\VanillaEngine.dll
+C:\Users\吴晨\我的项目\Vanilla\LuceneEngine\obj\Debug\VanillaEngine.pdb
+C:\Users\吴晨\我的项目\Vanilla\LuceneEngine\obj\Debug\VanillaEngine.csprojResolveAssemblyReference.cache

@@ -1,0 +1,15 @@
+C:\Users\吴晨\我的项目\Lucene.Net_2_4_0\src\Demo\DeleteFiles\bin\Debug\DeleteFiles.exe
+C:\Users\吴晨\我的项目\Lucene.Net_2_4_0\src\Demo\DeleteFiles\bin\Debug\DeleteFiles.pdb
+C:\Users\吴晨\我的项目\Lucene.Net_2_4_0\src\Demo\DeleteFiles\bin\Debug\DemoLib.dll
+C:\Users\吴晨\我的项目\Lucene.Net_2_4_0\src\Demo\DeleteFiles\bin\Debug\Lucene.Net.dll
+C:\Users\吴晨\我的项目\Lucene.Net_2_4_0\src\Demo\DeleteFiles\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\吴晨\我的项目\Lucene.Net_2_4_0\src\Demo\DeleteFiles\bin\Debug\Lucene.Net.pdb
+C:\Users\吴晨\我的项目\Lucene.Net_2_4_0\src\Demo\DeleteFiles\bin\Debug\DemoLib.pdb
+C:\Users\吴晨\我的项目\Lucene.Net_2_4_0\src\Demo\DeleteFiles\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\吴晨\我的项目\Lucene.Net_2_4_0\src\Demo\DeleteFiles\obj\Debug\DeleteFiles.exe
+C:\Users\吴晨\我的项目\Lucene.Net_2_4_0\src\Demo\DeleteFiles\obj\Debug\DeleteFiles.pdb
+C:\Users\吴晨\我的项目\Vanilla\DeleteFiles\bin\Debug\DeleteFiles.exe
+C:\Users\吴晨\我的项目\Vanilla\DeleteFiles\bin\Debug\DeleteFiles.pdb
+C:\Users\吴晨\我的项目\Vanilla\DeleteFiles\obj\Debug\DeleteFiles.exe
+C:\Users\吴晨\我的项目\Vanilla\DeleteFiles\obj\Debug\DeleteFiles.pdb
+C:\Users\吴晨\我的项目\Vanilla\DeleteFiles\obj\Debug\DeleteFiles.csprojResolveAssemblyReference.cache

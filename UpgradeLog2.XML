@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Vanilla">
+</Property><Property Name="Solution File" Value="C:\Users\吴晨\我的项目\Vanilla\Vanilla.sln">
+</Property><Property Name="Date" Value="2012年4月13日">
+</Property><Property Name="Time" Value="下午 16:26">
+</Property><Property Name="Log Number" Value="2">
+</Property></Properties><Event ErrorLevel="3" Project="" Source="Vanilla.sln" Description="SafeUpgrade">
+</Event><Event ErrorLevel="0" Project="" Source="Vanilla.sln" Description="File successfully backed up as C:\Users\吴晨\我的项目\Vanilla\Backup1\Vanilla.sln">
+</Event><Event ErrorLevel="3" Project="DemoLib" Source="DemoLib\DemoLib.csproj" Description="OneWayUpgrade">
+</Event><Event ErrorLevel="0" Project="DemoLib" Source="DemoLib\DemoLib.csproj" Description="Project file successfully backed up as C:\Users\吴晨\我的项目\Vanilla\Backup1\DemoLib\DemoLib.csproj">
+</Event><Event ErrorLevel="0" Project="DemoLib" Source="DemoLib\DemoLib.csproj.user" Description="Project user file successfully backed up as C:\Users\吴晨\我的项目\Vanilla\Backup1\DemoLib\DemoLib.csproj.user">
+</Event><Event ErrorLevel="0" Project="DemoLib" Source="DemoLib\AssemblyInfo.cs" Description="File successfully backed up as C:\Users\吴晨\我的项目\Vanilla\Backup1\DemoLib\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="DemoLib" Source="DemoLib\CJK\CJKAnalyzer.cs" Description="File successfully backed up as C:\Users\吴晨\我的项目\Vanilla\Backup1\DemoLib\CJK\CJKAnalyzer.cs">
+</Event><Event ErrorLevel="0" Project="DemoLib" Source="DemoLib\CJK\CJKTokenizer.cs" Description="File successfully backed up as C:\Users\吴晨\我的项目\Vanilla\Backup1\DemoLib\CJK\CJKTokenizer.cs">
+</Event><Event ErrorLevel="0" Project="DemoLib" Source="DemoLib\FileDocument.cs" Description="File successfully backed up as C:\Users\吴晨\我的项目\Vanilla\Backup1\DemoLib\FileDocument.cs">
+</Event><Event ErrorLevel="0" Project="DemoLib" Source="DemoLib\HTMLDocument.cs" Description="File successfully backed up as C:\Users\吴晨\我的项目\Vanilla\Backup1\DemoLib\HTMLDocument.cs">
+</Event><Event ErrorLevel="0" Project="DemoLib" Source="DemoLib\HTML\Entities.cs" Description="File successfully backed up as C:\Users\吴晨\我的项目\Vanilla\Backup1\DemoLib\HTML\Entities.cs">
+</Event><Event ErrorLevel="0" Project="DemoLib" Source="DemoLib\HTML\HTMLParser.cs" Description="File successfully backed up as C:\Users\吴晨\我的项目\Vanilla\Backup1\DemoLib\HTML\HTMLParser.cs">
+</Event><Event ErrorLevel="0" Project="DemoLib" Source="DemoLib\HTML\HTMLParserConstants.cs" Description="File successfully backed up as C:\Users\吴晨\我的项目\Vanilla\Backup1\DemoLib\HTML\HTMLParserConstants.cs">
+</Event><Event ErrorLevel="0" Project="DemoLib" Source="DemoLib\HTML\HTMLParserTokenManager.cs" Description="File successfully backed up as C:\Users\吴晨\我的项目\Vanilla\Backup1\DemoLib\HTML\HTMLParserTokenManager.cs">
+</Event><Event ErrorLevel="0" Project="DemoLib" Source="DemoLib\HTML\ParseException.cs" Description="File successfully backed up as C:\Users\吴晨\我的项目\Vanilla\Backup1\DemoLib\HTML\ParseException.cs">
+</Event><Event ErrorLevel="0" Project="DemoLib" Source="DemoLib\HTML\ParserThread.cs" Description="File successfully backed up as C:\Users\吴晨\我的项目\Vanilla\Backup1\DemoLib\HTML\ParserThread.cs">
+</Event><Event ErrorLevel="0" Project="DemoLib" Source="DemoLib\HTML\SimpleCharStream.cs" Description="File successfully backed up as C:\Users\吴晨\我的项目\Vanilla\Backup1\DemoLib\HTML\SimpleCharStream.cs">
+</Event><Event ErrorLevel="0" Project="DemoLib" Source="DemoLib\HTML\Tags.cs" Description="File successfully backed up as C:\Users\吴晨\我的项目\Vanilla\Backup1\DemoLib\HTML\Tags.cs">
+</Event><Event ErrorLevel="0" Project="DemoLib" Source="DemoLib\HTML\Test.cs" Description="File successfully backed up as C:\Users\吴晨\我的项目\Vanilla\Backup1\DemoLib\HTML\Test.cs">
+</Event><Event ErrorLevel="0" Project="DemoLib" Source="DemoLib\HTML\Token.cs" Description="File successfully backed up as C:\Users\吴晨\我的项目\Vanilla\Backup1\DemoLib\HTML\Token.cs">
+</Event><Event ErrorLevel="0" Project="DemoLib" Source="DemoLib\HTML\TokenMgrError.cs" Description="File successfully backed up as C:\Users\吴晨\我的项目\Vanilla\Backup1\DemoLib\HTML\TokenMgrError.cs">
+</Event><Event ErrorLevel="0" Project="DemoLib" Source="DemoLib\HTML\HTMLParser.jj" Description="File successfully backed up as C:\Users\吴晨\我的项目\Vanilla\Backup1\DemoLib\HTML\HTMLParser.jj">
+</Event><Event ErrorLevel="1" Project="DemoLib" Source="DemoLib\DemoLib.csproj" Description="Your project is targeting .NET Framework 2.0 or 3.0. If your project uses assemblies requiring a newer .NET Framework, your project will fail to build. You can change the .NET Framework version by clicking Properties on the project menu and then selecting a new version in the '.NET Framework' dropdown box. (In Visual Basic, this is located on the Compile tab by clicking the 'Advanced Compiler Options...' button.)">
+</Event><Event ErrorLevel="0" Project="DemoLib" Source="DemoLib\DemoLib.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="DemoLib" Source="DemoLib\DemoLib.csproj" Description="Converted">
+</Event><Event ErrorLevel="3" Project="DeleteFiles" Source="DeleteFiles\DeleteFiles.csproj" Description="OneWayUpgrade">
+</Event><Event ErrorLevel="0" Project="DeleteFiles" Source="DeleteFiles\DeleteFiles.csproj" Description="Project file successfully backed up as C:\Users\吴晨\我的项目\Vanilla\Backup1\DeleteFiles\DeleteFiles.csproj">
+</Event><Event ErrorLevel="0" Project="DeleteFiles" Source="DeleteFiles\AssemblyInfo.cs" Description="File successfully backed up as C:\Users\吴晨\我的项目\Vanilla\Backup1\DeleteFiles\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="DeleteFiles" Source="DeleteFiles\DeleteFiles.cs" Description="File successfully backed up as C:\Users\吴晨\我的项目\Vanilla\Backup1\DeleteFiles\DeleteFiles.cs">
+</Event><Event ErrorLevel="0" Project="DeleteFiles" Source="DeleteFiles\App.ico" Description="File successfully backed up as C:\Users\吴晨\我的项目\Vanilla\Backup1\DeleteFiles\App.ico">
+</Event><Event ErrorLevel="1" Project="DeleteFiles" Source="DeleteFiles\DeleteFiles.csproj" Description="Your project is targeting .NET Framework 2.0 or 3.0. If your project uses assemblies requiring a newer .NET Framework, your project will fail to build. You can change the .NET Framework version by clicking Properties on the project menu and then selecting a new version in the '.NET Framework' dropdown box. (In Visual Basic, this is located on the Compile tab by clicking the 'Advanced Compiler Options...' button.)">
+</Event><Event ErrorLevel="0" Project="DeleteFiles" Source="DeleteFiles\DeleteFiles.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="DeleteFiles" Source="DeleteFiles\DeleteFiles.csproj" Description="Converted">
+</Event><Event ErrorLevel="3" Project="IndexFiles" Source="IndexFiles\IndexFiles.csproj" Description="OneWayUpgrade">
+</Event><Event ErrorLevel="0" Project="IndexFiles" Source="IndexFiles\IndexFiles.csproj" Description="Project file successfully backed up as C:\Users\吴晨\我的项目\Vanilla\Backup1\IndexFiles\IndexFiles.csproj">
+</Event><Event ErrorLevel="0" Project="IndexFiles" Source="IndexFiles\AssemblyInfo.cs" Description="File successfully backed up as C:\Users\吴晨\我的项目\Vanilla\Backup1\IndexFiles\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="IndexFiles" Source="IndexFiles\IndexFiles.cs" Description="File successfully backed up as C:\Users\吴晨\我的项目\Vanilla\Backup1\IndexFiles\IndexFiles.cs">
+</Event><Event ErrorLevel="0" Project="IndexFiles" Source="IndexFiles\App.ico" Description="File successfully backed up as C:\Users\吴晨\我的项目\Vanilla\Backup1\IndexFiles\App.ico">
+</Event><Event ErrorLevel="1" Project="IndexFiles" Source="IndexFiles\IndexFiles.csproj" Description="Your project is targeting .NET Framework 2.0 or 3.0. If your project uses assemblies requiring a newer .NET Framework, your project will fail to build. You can change the .NET Framework version by clicking Properties on the project menu and then selecting a new version in the '.NET Framework' dropdown box. (In Visual Basic, this is located on the Compile tab by clicking the 'Advanced Compiler Options...' button.)">
+</Event><Event ErrorLevel="0" Project="IndexFiles" Source="IndexFiles\IndexFiles.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="IndexFiles" Source="IndexFiles\IndexFiles.csproj" Description="Converted">
+</Event><Event ErrorLevel="3" Project="IndexHtml" Source="IndexHtml\IndexHtml.csproj" Description="OneWayUpgrade">
+</Event><Event ErrorLevel="0" Project="IndexHtml" Source="IndexHtml\IndexHtml.csproj" Description="Project file successfully backed up as C:\Users\吴晨\我的项目\Vanilla\Backup1\IndexHtml\IndexHtml.csproj">
+</Event><Event ErrorLevel="0" Project="IndexHtml" Source="IndexHtml\IndexHtml.csproj.user" Description="Project user file successfully backed up as C:\Users\吴晨\我的项目\Vanilla\Backup1\IndexHtml\IndexHtml.csproj.user">
+</Event><Event ErrorLevel="0" Project="IndexHtml" Source="IndexHtml\AssemblyInfo.cs" Description="File successfully backed up as C:\Users\吴晨\我的项目\Vanilla\Backup1\IndexHtml\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="IndexHtml" Source="IndexHtml\IndexHtml.cs" Description="File successfully backed up as C:\Users\吴晨\我的项目\Vanilla\Backup1\IndexHtml\IndexHtml.cs">
+</Event><Event ErrorLevel="0" Project="IndexHtml" Source="IndexHtml\App.ico" Description="File successfully backed up as C:\Users\吴晨\我的项目\Vanilla\Backup1\IndexHtml\App.ico">
+</Event><Event ErrorLevel="1" Project="IndexHtml" Source="IndexHtml\IndexHtml.csproj" Description="Your project is targeting .NET Framework 2.0 or 3.0. If your project uses assemblies requiring a newer .NET Framework, your project will fail to build. You can change the .NET Framework version by clicking Properties on the project menu and then selecting a new version in the '.NET Framework' dropdown box. (In Visual Basic, this is located on the Compile tab by clicking the 'Advanced Compiler Options...' button.)">
+</Event><Event ErrorLevel="0" Project="IndexHtml" Source="IndexHtml\IndexHtml.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="IndexHtml" Source="IndexHtml\IndexHtml.csproj" Description="Converted">
+</Event><Event ErrorLevel="3" Project="SearchFiles" Source="SearchFiles\SearchFiles.csproj" Description="OneWayUpgrade">
+</Event><Event ErrorLevel="0" Project="SearchFiles" Source="SearchFiles\SearchFiles.csproj" Description="Project file successfully backed up as C:\Users\吴晨\我的项目\Vanilla\Backup1\SearchFiles\SearchFiles.csproj">
+</Event><Event ErrorLevel="0" Project="SearchFiles" Source="SearchFiles\AssemblyInfo.cs" Description="File successfully backed up as C:\Users\吴晨\我的项目\Vanilla\Backup1\SearchFiles\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="SearchFiles" Source="SearchFiles\SearchFiles.cs" Description="File successfully backed up as C:\Users\吴晨\我的项目\Vanilla\Backup1\SearchFiles\SearchFiles.cs">
+</Event><Event ErrorLevel="0" Project="SearchFiles" Source="SearchFiles\App.ico" Description="File successfully backed up as C:\Users\吴晨\我的项目\Vanilla\Backup1\SearchFiles\App.ico">
+</Event><Event ErrorLevel="1" Project="SearchFiles" Source="SearchFiles\SearchFiles.csproj" Description="Your project is targeting .NET Framework 2.0 or 3.0. If your project uses assemblies requiring a newer .NET Framework, your project will fail to build. You can change the .NET Framework version by clicking Properties on the project menu and then selecting a new version in the '.NET Framework' dropdown box. (In Visual Basic, this is located on the Compile tab by clicking the 'Advanced Compiler Options...' button.)">
+</Event><Event ErrorLevel="0" Project="SearchFiles" Source="SearchFiles\SearchFiles.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="SearchFiles" Source="SearchFiles\SearchFiles.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="Vanilla.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="Vanilla.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="DemoLib" Source="DemoLib\DemoLib.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="DeleteFiles" Source="DeleteFiles\DeleteFiles.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="IndexFiles" Source="IndexFiles\IndexFiles.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="IndexHtml" Source="IndexHtml\IndexHtml.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="SearchFiles" Source="SearchFiles\SearchFiles.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

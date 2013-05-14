@@ -1,0 +1,5 @@
+C:\Users\吴晨\我的项目\Vanilla\VanillaChecker\SpellChecker\obj\Debug\VanillaSpellChecker.csprojResolveAssemblyReference.cache
+C:\Users\吴晨\我的项目\build\bin\contrib\SpellChecker\Debug\VanillaChecker.dll
+C:\Users\吴晨\我的项目\build\bin\contrib\SpellChecker\Debug\VanillaChecker.pdb
+C:\Users\吴晨\我的项目\Vanilla\VanillaChecker\SpellChecker\obj\Debug\VanillaChecker.dll
+C:\Users\吴晨\我的项目\Vanilla\VanillaChecker\SpellChecker\obj\Debug\VanillaChecker.pdb

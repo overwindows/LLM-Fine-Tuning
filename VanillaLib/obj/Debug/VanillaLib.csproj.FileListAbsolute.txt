@@ -1,0 +1,16 @@
+C:\Users\吴晨\我的项目\Vanilla\DemoLib\bin\Debug\VanillaLib.dll.config
+C:\Users\吴晨\我的项目\Vanilla\DemoLib\bin\Debug\VanillaLib.dll
+C:\Users\吴晨\我的项目\Vanilla\DemoLib\bin\Debug\VanillaLib.pdb
+C:\Users\吴晨\我的项目\Vanilla\DemoLib\bin\Debug\Lucene.Net.dll
+C:\Users\吴晨\我的项目\Vanilla\DemoLib\bin\Debug\Lucene.Net.pdb
+C:\Users\吴晨\我的项目\Vanilla\DemoLib\obj\Debug\VanillaLib.csprojResolveAssemblyReference.cache
+C:\Users\吴晨\我的项目\Vanilla\DemoLib\obj\Debug\VanillaLib.dll
+C:\Users\吴晨\我的项目\Vanilla\DemoLib\obj\Debug\VanillaLib.pdb
+C:\Users\吴晨\我的项目\Vanilla\VanillaLib\bin\Debug\VanillaLib.dll.config
+C:\Users\吴晨\我的项目\Vanilla\VanillaLib\bin\Debug\VanillaLib.dll
+C:\Users\吴晨\我的项目\Vanilla\VanillaLib\bin\Debug\VanillaLib.pdb
+C:\Users\吴晨\我的项目\Vanilla\VanillaLib\bin\Debug\VanillaEngine.dll
+C:\Users\吴晨\我的项目\Vanilla\VanillaLib\bin\Debug\VanillaEngine.pdb
+C:\Users\吴晨\我的项目\Vanilla\VanillaLib\obj\Debug\VanillaLib.csprojResolveAssemblyReference.cache
+C:\Users\吴晨\我的项目\Vanilla\VanillaLib\obj\Debug\VanillaLib.dll
+C:\Users\吴晨\我的项目\Vanilla\VanillaLib\obj\Debug\VanillaLib.pdb

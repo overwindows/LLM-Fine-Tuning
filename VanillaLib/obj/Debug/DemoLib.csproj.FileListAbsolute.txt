@@ -1,0 +1,8 @@
+C:\Users\吴晨\我的项目\Lucene.Net_2_4_0\src\Demo\DemoLib\bin\Debug\DemoLib.dll
+C:\Users\吴晨\我的项目\Lucene.Net_2_4_0\src\Demo\DemoLib\bin\Debug\DemoLib.pdb
+C:\Users\吴晨\我的项目\Lucene.Net_2_4_0\src\Demo\DemoLib\bin\Debug\Lucene.Net.dll
+C:\Users\吴晨\我的项目\Lucene.Net_2_4_0\src\Demo\DemoLib\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\吴晨\我的项目\Lucene.Net_2_4_0\src\Demo\DemoLib\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\吴晨\我的项目\Lucene.Net_2_4_0\src\Demo\DemoLib\obj\Debug\DemoLib.dll
+C:\Users\吴晨\我的项目\Lucene.Net_2_4_0\src\Demo\DemoLib\obj\Debug\DemoLib.pdb
+C:\Users\吴晨\我的项目\Lucene.Net_2_4_0\src\Demo\DemoLib\bin\Debug\Lucene.Net.pdb

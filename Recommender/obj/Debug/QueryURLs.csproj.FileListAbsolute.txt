@@ -1,0 +1,8 @@
+C:\Users\吴晨\我的项目\Vanilla\SearchFiles\bin\Debug\SearchFiles.exe.config
+C:\Users\吴晨\我的项目\Vanilla\SearchFiles\bin\Debug\SearchFiles.exe
+C:\Users\吴晨\我的项目\Vanilla\SearchFiles\bin\Debug\SearchFiles.pdb
+C:\Users\吴晨\我的项目\Vanilla\SearchFiles\bin\Debug\VanillaLib.dll
+C:\Users\吴晨\我的项目\Vanilla\SearchFiles\bin\Debug\VanillaLib.pdb
+C:\Users\吴晨\我的项目\Vanilla\SearchFiles\obj\Debug\SearchFiles.exe
+C:\Users\吴晨\我的项目\Vanilla\SearchFiles\obj\Debug\SearchFiles.pdb
+C:\Users\吴晨\我的项目\Vanilla\SearchFiles\obj\Debug\QueryURLs.csprojResolveAssemblyReference.cache

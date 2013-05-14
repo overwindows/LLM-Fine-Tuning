@@ -1,0 +1,51 @@
+<Settings>
+  <CrawlerForm-comboBoxWeb>
+    <Item>http://www.tech-invite.com/</Item>
+    <Item>http://www.cs.uiuc.edu/homes/hanj/</Item>
+    <Item>http://www.962360.com/</Item>
+  </CrawlerForm-comboBoxWeb>
+  <SettingsForm-comboBoxSettingsCodePage>
+    <Item>Arabic (1256)</Item>
+    <Item>Baltic (1257)</Item>
+    <Item>Chinese (Taiwan, Hong Kong) (950)</Item>
+    <Item>Cyrillic (1251)</Item>
+    <Item>Greek (1253)</Item>
+    <Item>Hebrew (1255)</Item>
+    <Item>Japanese (932)</Item>
+    <Item>Korean Extended Wansung (949)</Item>
+    <Item>Latin 1 (1252)</Item>
+    <Item>Latin 2 (1250)</Item>
+    <Item>Latin 5 (1254)</Item>
+    <Item>PRC GBK (XGB) (936)</Item>
+    <Item>Thai (874)</Item>
+    <Item>Viet Nam (1258)</Item>
+  </SettingsForm-comboBoxSettingsCodePage>
+  <SettingsForm-listViewFileMatches>
+    <Item Checked="True">text/richtext	0	0</Item>
+    <Item Checked="True">text/html	0	0</Item>
+    <Item Checked="False">audio/x-aiff	0	0</Item>
+    <Item Checked="False">audio/basic	0	0</Item>
+    <Item Checked="False">audio/wav	0	0</Item>
+    <Item Checked="False">image/gif	0	0</Item>
+    <Item Checked="False">image/jpeg	0	0</Item>
+    <Item Checked="False">image/pjpeg	0	0</Item>
+    <Item Checked="False">image/tiff	0	0</Item>
+    <Item Checked="False">image/x-png	0	0</Item>
+    <Item Checked="False">image/x-xbitmap	0	0</Item>
+    <Item Checked="False">image/bmp	0	0</Item>
+    <Item Checked="False">image/x-jg	0	0</Item>
+    <Item Checked="False">image/x-emf	0	0</Item>
+    <Item Checked="False">image/x-wmf	0	0</Item>
+    <Item Checked="False">video/avi	0	0</Item>
+    <Item Checked="False">video/mpeg	0	0</Item>
+    <Item Checked="False">application/postscript	0	0</Item>
+    <Item Checked="False">application/base64	0	0</Item>
+    <Item Checked="False">application/macbinhex40	0	0</Item>
+    <Item Checked="False">application/pdf	0	0</Item>
+    <Item Checked="False">application/x-compressed	0	0</Item>
+    <Item Checked="False">application/x-zip-compressed	0	0</Item>
+    <Item Checked="False">application/x-gzip-compressed	0	0</Item>
+    <Item Checked="False">application/java	0	0</Item>
+    <Item Checked="False">application/x-msdownload	0	0</Item>
+  </SettingsForm-listViewFileMatches>
+</Settings>

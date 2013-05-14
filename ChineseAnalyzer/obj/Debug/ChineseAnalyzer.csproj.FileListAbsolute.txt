@@ -1,0 +1,10 @@
+C:\Users\吴晨\我的项目\Vanilla\ChinaneseAnalyer\bin\Debug\ChineseAnalyzer.dll.config
+C:\Users\吴晨\我的项目\Vanilla\ChinaneseAnalyer\bin\Debug\ChineseAnalyzer.dll
+C:\Users\吴晨\我的项目\Vanilla\ChinaneseAnalyer\bin\Debug\ChineseAnalyzer.pdb
+C:\Users\吴晨\我的项目\Vanilla\ChinaneseAnalyer\bin\Debug\Lucene.Net.dll
+C:\Users\吴晨\我的项目\Vanilla\ChinaneseAnalyer\bin\Debug\Lucene.Net.pdb
+C:\Users\吴晨\我的项目\Vanilla\ChinaneseAnalyer\obj\Debug\ChineseAnalyzer.csprojResolveAssemblyReference.cache
+C:\Users\吴晨\我的项目\Vanilla\ChinaneseAnalyer\obj\Debug\ChineseAnalyzer.csproj.GenerateResource.Cache
+C:\Users\吴晨\我的项目\Vanilla\ChinaneseAnalyer\obj\Debug\ChineseAnalyzer.dll
+C:\Users\吴晨\我的项目\Vanilla\ChinaneseAnalyer\obj\Debug\ChineseAnalyzer.pdb
+C:\Users\吴晨\我的项目\Vanilla\ChinaneseAnalyer\obj\Debug\ChineseAnalyzer.Resource.resources

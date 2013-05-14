@@ -1,0 +1,12 @@
+C:\Users\吴晨\我的项目\Vanilla\SearchFiles\bin\Debug\SearchUrls.dll.config
+C:\Users\吴晨\我的项目\Vanilla\SearchFiles\bin\Debug\SearchUrls.dll
+C:\Users\吴晨\我的项目\Vanilla\SearchFiles\bin\Debug\SearchUrls.pdb
+C:\Users\吴晨\我的项目\Vanilla\SearchFiles\bin\Debug\Lucene.Net.dll
+C:\Users\吴晨\我的项目\Vanilla\SearchFiles\bin\Debug\VanillaLib.dll
+C:\Users\吴晨\我的项目\Vanilla\SearchFiles\bin\Debug\Lucene.Net.pdb
+C:\Users\吴晨\我的项目\Vanilla\SearchFiles\bin\Debug\VanillaLib.pdb
+C:\Users\吴晨\我的项目\Vanilla\SearchFiles\obj\Debug\SearchUrls.csprojResolveAssemblyReference.cache
+C:\Users\吴晨\我的项目\Vanilla\SearchFiles\obj\Debug\SearchUrls.dll
+C:\Users\吴晨\我的项目\Vanilla\SearchFiles\obj\Debug\SearchUrls.pdb
+C:\Users\吴晨\我的项目\Vanilla\SearchFiles\bin\Debug\VanillaAnalyzer.dll
+C:\Users\吴晨\我的项目\Vanilla\SearchFiles\bin\Debug\VanillaAnalyzer.pdb

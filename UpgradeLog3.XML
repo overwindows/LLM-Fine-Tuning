@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Vanilla">
+</Property><Property Name="Solution File" Value="C:\Users\吴晨\我的项目\Vanilla\Vanilla.sln">
+</Property><Property Name="Date" Value="2012年4月13日">
+</Property><Property Name="Time" Value="下午 16:30:33">
+</Property><Property Name="Log Number" Value="3">
+</Property></Properties><Event ErrorLevel="3" Project="Crawler" Source="Crawler\Crawler.csproj" Description="OneWayUpgrade">
+</Event><Event ErrorLevel="0" Project="Crawler" Source="Crawler\Crawler.csproj" Description="Project file successfully backed up as C:\Users\吴晨\我的项目\Vanilla\Backup2\Crawler.csproj">
+</Event><Event ErrorLevel="0" Project="Crawler" Source="Crawler\Crawler.csproj.user" Description="Project user file successfully backed up as C:\Users\吴晨\我的项目\Vanilla\Backup2\Crawler.csproj.user">
+</Event><Event ErrorLevel="0" Project="Crawler" Source="Crawler\AboutForm.cs" Description="File successfully backed up as C:\Users\吴晨\我的项目\Vanilla\Backup2\AboutForm.cs">
+</Event><Event ErrorLevel="0" Project="Crawler" Source="Crawler\AssemblyInfo.cs" Description="File successfully backed up as C:\Users\吴晨\我的项目\Vanilla\Backup2\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="Crawler" Source="Crawler\BrowseForFolder.cs" Description="File successfully backed up as C:\Users\吴晨\我的项目\Vanilla\Backup2\BrowseForFolder.cs">
+</Event><Event ErrorLevel="0" Project="Crawler" Source="Crawler\FileTypeForm.cs" Description="File successfully backed up as C:\Users\吴晨\我的项目\Vanilla\Backup2\FileTypeForm.cs">
+</Event><Event ErrorLevel="0" Project="Crawler" Source="Crawler\MainForm.cs" Description="File successfully backed up as C:\Users\吴晨\我的项目\Vanilla\Backup2\MainForm.cs">
+</Event><Event ErrorLevel="0" Project="Crawler" Source="Crawler\Settings.cs" Description="File successfully backed up as C:\Users\吴晨\我的项目\Vanilla\Backup2\Settings.cs">
+</Event><Event ErrorLevel="0" Project="Crawler" Source="Crawler\SettingsForm.cs" Description="File successfully backed up as C:\Users\吴晨\我的项目\Vanilla\Backup2\SettingsForm.cs">
+</Event><Event ErrorLevel="0" Project="Crawler" Source="Crawler\SortTree.cs" Description="File successfully backed up as C:\Users\吴晨\我的项目\Vanilla\Backup2\SortTree.cs">
+</Event><Event ErrorLevel="0" Project="Crawler" Source="Crawler\AboutForm.resx" Description="File successfully backed up as C:\Users\吴晨\我的项目\Vanilla\Backup2\AboutForm.resx">
+</Event><Event ErrorLevel="0" Project="Crawler" Source="Crawler\FileTypeForm.resx" Description="File successfully backed up as C:\Users\吴晨\我的项目\Vanilla\Backup2\FileTypeForm.resx">
+</Event><Event ErrorLevel="0" Project="Crawler" Source="Crawler\MainForm.resx" Description="File successfully backed up as C:\Users\吴晨\我的项目\Vanilla\Backup2\MainForm.resx">
+</Event><Event ErrorLevel="0" Project="Crawler" Source="Crawler\SettingsForm.resx" Description="File successfully backed up as C:\Users\吴晨\我的项目\Vanilla\Backup2\SettingsForm.resx">
+</Event><Event ErrorLevel="1" Project="Crawler" Source="Crawler\Crawler.csproj" Description="Your project is targeting .NET Framework 2.0 or 3.0. If your project uses assemblies requiring a newer .NET Framework, your project will fail to build. You can change the .NET Framework version by clicking Properties on the project menu and then selecting a new version in the '.NET Framework' dropdown box. (In Visual Basic, this is located on the Compile tab by clicking the 'Advanced Compiler Options...' button.)">
+</Event><Event ErrorLevel="0" Project="Crawler" Source="Crawler\Crawler.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Crawler" Source="Crawler\Crawler.csproj" Description="Converted">
+</Event></UpgradeLog>

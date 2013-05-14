@@ -1,0 +1,17 @@
+C:\Users\吴晨\我的项目\Lucene.Net_2_4_0\src\Demo\IndexFiles\bin\Debug\IndexFiles.exe
+C:\Users\吴晨\我的项目\Lucene.Net_2_4_0\src\Demo\IndexFiles\bin\Debug\IndexFiles.pdb
+C:\Users\吴晨\我的项目\Lucene.Net_2_4_0\src\Demo\IndexFiles\bin\Debug\DemoLib.dll
+C:\Users\吴晨\我的项目\Lucene.Net_2_4_0\src\Demo\IndexFiles\bin\Debug\Lucene.Net.dll
+C:\Users\吴晨\我的项目\Lucene.Net_2_4_0\src\Demo\IndexFiles\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\吴晨\我的项目\Lucene.Net_2_4_0\src\Demo\IndexFiles\bin\Debug\Lucene.Net.pdb
+C:\Users\吴晨\我的项目\Lucene.Net_2_4_0\src\Demo\IndexFiles\bin\Debug\DemoLib.pdb
+C:\Users\吴晨\我的项目\Lucene.Net_2_4_0\src\Demo\IndexFiles\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\吴晨\我的项目\Lucene.Net_2_4_0\src\Demo\IndexFiles\obj\Debug\IndexFiles.exe
+C:\Users\吴晨\我的项目\Lucene.Net_2_4_0\src\Demo\IndexFiles\obj\Debug\IndexFiles.pdb
+C:\Users\吴晨\我的项目\Vanilla\IndexFiles\bin\Debug\IndexFiles.exe
+C:\Users\吴晨\我的项目\Vanilla\IndexFiles\bin\Debug\IndexFiles.pdb
+C:\Users\吴晨\我的项目\Vanilla\IndexFiles\bin\Debug\VanillaLib.pdb
+C:\Users\吴晨\我的项目\Vanilla\IndexFiles\obj\Debug\IndexFiles.csprojResolveAssemblyReference.cache
+C:\Users\吴晨\我的项目\Vanilla\IndexFiles\obj\Debug\IndexFiles.exe
+C:\Users\吴晨\我的项目\Vanilla\IndexFiles\obj\Debug\IndexFiles.pdb
+C:\Users\吴晨\我的项目\Vanilla\IndexFiles\bin\Debug\VanillaLib.exe

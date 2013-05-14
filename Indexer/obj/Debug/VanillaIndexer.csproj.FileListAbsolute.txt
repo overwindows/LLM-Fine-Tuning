@@ -1,0 +1,12 @@
+C:\Users\吴晨\我的项目\Vanilla\Indexer\bin\Debug\VanillaIndexer.dll.config
+C:\Users\吴晨\我的项目\Vanilla\Indexer\bin\Debug\VanillaIndexer.dll
+C:\Users\吴晨\我的项目\Vanilla\Indexer\bin\Debug\VanillaIndexer.pdb
+C:\Users\吴晨\我的项目\Vanilla\Indexer\bin\Debug\VanillaAnalyzer.dll
+C:\Users\吴晨\我的项目\Vanilla\Indexer\bin\Debug\VanillaEngine.dll
+C:\Users\吴晨\我的项目\Vanilla\Indexer\bin\Debug\VanillaLib.dll
+C:\Users\吴晨\我的项目\Vanilla\Indexer\bin\Debug\VanillaAnalyzer.pdb
+C:\Users\吴晨\我的项目\Vanilla\Indexer\bin\Debug\VanillaEngine.pdb
+C:\Users\吴晨\我的项目\Vanilla\Indexer\bin\Debug\VanillaLib.pdb
+C:\Users\吴晨\我的项目\Vanilla\Indexer\obj\Debug\VanillaIndexer.csprojResolveAssemblyReference.cache
+C:\Users\吴晨\我的项目\Vanilla\Indexer\obj\Debug\VanillaIndexer.dll
+C:\Users\吴晨\我的项目\Vanilla\Indexer\obj\Debug\VanillaIndexer.pdb
