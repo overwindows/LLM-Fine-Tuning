@@ -21,6 +21,7 @@ Data: [alpaca](https://huggingface.co/datasets/tatsu-lab/alpaca)
 
 ```bash
 python finetune-alpaca.py \
+    --model_name_or_path bigscience/bloom-7b1 \
     --per_device_train_batch_size 2 \
     --gradient_accumulation_steps 1 \
     --num_train_epochs 2 \
