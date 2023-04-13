@@ -12,6 +12,7 @@ class ModifiedTrainer(Trainer):
             input_ids=inputs["input_ids"],
             attention_mask=torch.ones_like(inputs["input_ids"]).bool(),
             labels=inputs["input_ids"],
+            use_cache=False
         ).loss
 
 

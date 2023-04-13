@@ -15,6 +15,7 @@ def main():
     device = torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
 
     model_name = model_args.model_name_or_path
+    # print(model_name)
     tokeniser = BloomTokenizerFast.from_pretrained(
         f"{model_name}", add_prefix_space=True
     )
