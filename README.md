@@ -1,4 +1,4 @@
-# BLOOM-fine-tuning
+# LLM-fine-tuning
 
 This project is for fine-tuning BLOOM. The repo contains:
 - We use [Stanford Alpaca](https://github.com/tatsu-lab/stanford_alpaca).

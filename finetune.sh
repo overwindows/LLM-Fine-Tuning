@@ -1,4 +1,4 @@
-deepspeed --num_gpus=8 finetune-alpaca.py \
+deepspeed --num_gpus=8 finetune.py \
     --model_name_or_path bigscience/bloom-7b1  \
     --per_device_train_batch_size 2 \
     --num_train_epochs 2 \
