@@ -35,5 +35,5 @@ python finetune-alpaca.py \
 - [x] Add Google Colab example
 - [x] Test bloom-560m
 - [x] Test bloom-1b7
-- [ ] Test bloom-7b1
+- [X] Test bloom-7b1
 - [ ] Support Evaluation
