@@ -25,8 +25,8 @@ def tokenise_data(dataset, tokenizer, max_seq_length=512):
     for elem in tqdm.tqdm(dataset["train"]):
         tokenised_list.append(
             tokenizer.encode(
-                # elem["text"],
-                elem["whole_func_string"],
+                elem["text"],
+                # elem["whole_func_string"],
                 max_length=max_seq_length,
                 padding="max_length",
                 truncation=True,
