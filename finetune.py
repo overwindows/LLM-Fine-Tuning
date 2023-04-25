@@ -25,7 +25,7 @@ def main():
     dataset = load_dataset(data_name)
     input_ids = tokenise_data(dataset, tokeniser)
 
-    model.gradient_checkpointing_enable()
+    model.gradient_checkpointing_enable() 
     model.is_parallelizable = True
     model.model_parallel = True
 
