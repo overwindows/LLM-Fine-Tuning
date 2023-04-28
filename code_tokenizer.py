@@ -6,6 +6,7 @@ import re
 import sys
 import tokenize
 from io import BytesIO
+
 """
 sudo apt-get install libclang-dev  # for clang.cindex
 """
@@ -71,7 +72,7 @@ PYTHON_CHAR2TOKEN = {'#': ' STOKEN0 ',
 from tree_sitter import Language, Parser
 
 csharp_parser = Parser()
-csharp_parser.set_language(Language('build/my-languages.so', 'c_sharp'))
+csharp_parser.set_language(Language('parser/my-languages.so', 'c_sharp'))
 # csharp_parser = [parser, DFG_csharp]
 
 def tree_to_token_index(root_node):
@@ -137,8 +138,37 @@ def process_string(tok, char2tok, tok2char, is_comment):
     return tok
 
 
-def tokenize_javascript(s, keep_comments=False):
-    return s.split()
+import re  
+  
+def tokenize_javascript(s, keep_comments=False):  
+    tokens = []  
+    assert isinstance(s, str)  
+  
+    # Define a regular expression pattern for JavaScript tokens  
+    pattern = r'''(?x)          # Enable verbose mode  
+        (?:[A-Za-z_]\w*)        # Identifiers and keywords  
+        |(?:\d+\.\d*|\.\d+|\d+)  # Numeric literals  
+        |(?:\+|-|\*|\/|%|==)    # Operators  
+        |(?:\'[^\']*\'|"[^"]*")  # String literals  
+        |(?:\s+)                # Whitespace  
+        |(?:\/\/.*|\/\*[\s\S]*?\*\/)  # Comments  
+        |(?:[(){}\[\],;])       # Punctuation  
+    '''  
+  
+    # Find all tokens in the input string  
+    for match in re.finditer(pattern, s):  
+        token = match.group(0)  
+  
+        # Ignore comments if keep_comments is False  
+        if not keep_comments and (token.startswith("//") or token.startswith("/*")):  
+            continue  
+        token = token.strip()
+        if not token:
+            continue
+        tokens.append(token)  
+  
+    return tokens  
+
 
 
 def detokenize_javascript(s):

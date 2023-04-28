@@ -15,6 +15,27 @@ pip install -r requirements.txt
 
 Data: [alpaca](https://huggingface.co/datasets/tatsu-lab/alpaca)
 
+### Tokenize programming language with tree-sitter
+To get parser/my-languages.so, you need to build the Tree-sitter parser for the desired language (C# in this case) and create a directory named parser to store the compiled language library. 
+
+Clone the Tree-sitter repository for the desired language. For C#, you can clone the tree-sitter-c-sharp repository.
+```
+git clone https://github.com/tree-sitter/tree-sitter-c-sharp.git 
+git clone https://github.com/tree-sitter/tree-sitter-rust.git
+git clone https://github.com/tree-sitter/tree-sitter-json.git
+git clone https://github.com/tree-sitter/tree-sitter-typescript.git
+git clone https://github.com/tree-sitter/tree-sitter-julia.git
+git clone https://github.com/tree-sitter/tree-sitter-bash.git
+git clone https://github.com/tree-sitter/tree-sitter-haskell.git
+git clone https://github.com/tree-sitter/tree-sitter-html.git
+git clone https://github.com/tree-sitter/tree-sitter-c.git
+git clone https://github.com/tree-sitter/tree-sitter-scala.git
+git clone https://github.com/tree-sitter/tree-sitter-php.git
+git clone https://github.com/tree-sitter/tree-sitter-ruby.git
+git clone https://github.com/tree-sitter/tree-sitter-go.git
+git clone https://github.com/tree-sitter/tree-sitter-swift.git
+```
+
 ## Training
 
 ### alpaca
