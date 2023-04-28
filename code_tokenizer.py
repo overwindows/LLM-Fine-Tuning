@@ -6,16 +6,29 @@ import re
 import sys
 import tokenize
 from io import BytesIO
-
+"""
+sudo apt-get install libclang-dev  # for clang.cindex
+"""
 import clang
-import utils.javalang_tokenizer as javalang_tok
+import javalang_tokenizer as javalang_tok
 from clang.cindex import TokenKind
-from utils.timeout import timeout, TimeoutError
-from sacrebleu import tokenize_v14_international
+from timeout import timeout, TimeoutError
 import traceback
+import re  
+  
+def simple_tokenize(text):  
+    # Split the text into words using whitespace  
+    words = re.split(r'\s+', text)  
+  
+    # Join the words with a single space  
+    tokenized_text = ' '.join(words)  
+  
+    return tokenized_text  
+
+clang.cindex.Config.set_library_file('/usr/lib/llvm-14/lib/libclang.so')
+
 
 TOK_NO_SPACE_BEFORE = {',', ';'}
-clang.cindex.Config.set_library_file('/usr/lib/llvm-6.0/lib/libclang.so')
 STRINGS_AND_COMMENTS_TOKEN_KINDS = {TokenKind.LITERAL, TokenKind.COMMENT}
 logging.basicConfig(
     filename='timeout_cpp_tokenizer_examples.log', level=logging.DEBUG)
@@ -58,7 +71,7 @@ PYTHON_CHAR2TOKEN = {'#': ' STOKEN0 ',
 from tree_sitter import Language, Parser
 
 csharp_parser = Parser()
-csharp_parser.set_language(Language('parser/my-languages.so', 'c_sharp'))
+csharp_parser.set_language(Language('build/my-languages.so', 'c_sharp'))
 # csharp_parser = [parser, DFG_csharp]
 
 def tree_to_token_index(root_node):
@@ -115,7 +128,7 @@ def process_string(tok, char2tok, tok2char, is_comment):
     tok = tok.replace('\n', ' STRNEWLINE ')
     tok = tok.replace('\t', ' TABSYMBOL ')
     tok = re.sub(' +', ' ', tok)
-    tok = tokenize_v14_international(tok)
+    tok = simple_tokenize(tok)
     tok = re.sub(' +', ' ', tok)
     for special_token, char in tok2char.items():
         tok = tok.replace(special_token, char)
