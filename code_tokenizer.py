@@ -7,15 +7,30 @@ import sys
 import tokenize
 from io import BytesIO
 
+"""
+sudo apt-get install libclang-dev  # for clang.cindex
+sudo apt-get install clang
+"""
 import clang
-import utils.javalang_tokenizer as javalang_tok
+import javalang_tokenizer as javalang_tok
 from clang.cindex import TokenKind
-from utils.timeout import timeout, TimeoutError
-from sacrebleu import tokenize_v14_international
+from timeout import timeout, TimeoutError
 import traceback
+import re
+
+def simple_tokenize(text):  
+    # Split the text into words using whitespace  
+    words = re.split(r'\s+', text)  
+  
+    # Join the words with a single space  
+    tokenized_text = ' '.join(words)  
+  
+    return tokenized_text  
+
+clang.cindex.Config.set_library_file('/usr/lib/llvm-14/lib/libclang.so')
+
 
 TOK_NO_SPACE_BEFORE = {',', ';'}
-clang.cindex.Config.set_library_file('/usr/lib/llvm-6.0/lib/libclang.so')
 STRINGS_AND_COMMENTS_TOKEN_KINDS = {TokenKind.LITERAL, TokenKind.COMMENT}
 logging.basicConfig(
     filename='timeout_cpp_tokenizer_examples.log', level=logging.DEBUG)
@@ -115,7 +130,7 @@ def process_string(tok, char2tok, tok2char, is_comment):
     tok = tok.replace('\n', ' STRNEWLINE ')
     tok = tok.replace('\t', ' TABSYMBOL ')
     tok = re.sub(' +', ' ', tok)
-    tok = tokenize_v14_international(tok)
+    tok = simple_tokenize(tok)
     tok = re.sub(' +', ' ', tok)
     for special_token, char in tok2char.items():
         tok = tok.replace(special_token, char)
@@ -124,8 +139,37 @@ def process_string(tok, char2tok, tok2char, is_comment):
     return tok
 
 
-def tokenize_javascript(s, keep_comments=False):
-    return s.split()
+import re  
+  
+def tokenize_javascript(s, keep_comments=False):  
+    tokens = []  
+    assert isinstance(s, str)  
+  
+    # Define a regular expression pattern for JavaScript tokens  
+    pattern = r'''(?x)          # Enable verbose mode  
+        (?:[A-Za-z_]\w*)        # Identifiers and keywords  
+        |(?:\d+\.\d*|\.\d+|\d+)  # Numeric literals  
+        |(?:\+|-|\*|\/|%|==)    # Operators  
+        |(?:\'[^\']*\'|"[^"]*")  # String literals  
+        |(?:\s+)                # Whitespace  
+        |(?:\/\/.*|\/\*[\s\S]*?\*\/)  # Comments  
+        |(?:[(){}\[\],;])       # Punctuation  
+    '''  
+  
+    # Find all tokens in the input string  
+    for match in re.finditer(pattern, s):  
+        token = match.group(0)  
+  
+        # Ignore comments if keep_comments is False  
+        if not keep_comments and (token.startswith("//") or token.startswith("/*")):  
+            continue  
+        token = token.strip()
+        if not token:
+            continue
+        tokens.append(token)  
+  
+    return tokens  
+
 
 
 def detokenize_javascript(s):
