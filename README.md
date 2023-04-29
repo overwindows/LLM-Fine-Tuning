@@ -53,7 +53,7 @@ python finetune-alpaca.py \
 ```
 
 ## Progress
-- [x] Add Google Colab example
+- [x] Add Code Corpus
 - [x] Test bloom-560m
 - [x] Test bloom-1b7
 - [X] Test bloom-7b1

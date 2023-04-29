@@ -9,14 +9,15 @@ from io import BytesIO
 
 """
 sudo apt-get install libclang-dev  # for clang.cindex
+sudo apt-get install clang
 """
 import clang
 import javalang_tokenizer as javalang_tok
 from clang.cindex import TokenKind
 from timeout import timeout, TimeoutError
 import traceback
-import re  
-  
+import re
+
 def simple_tokenize(text):  
     # Split the text into words using whitespace  
     words = re.split(r'\s+', text)  
