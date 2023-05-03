@@ -27,7 +27,7 @@ def simple_tokenize(text):
   
     return tokenized_text  
 
-clang.cindex.Config.set_library_file('/usr/lib/llvm-14/lib/libclang.so')
+clang.cindex.Config.set_library_file('/usr/lib/llvm-10/lib/libclang.so')
 
 
 TOK_NO_SPACE_BEFORE = {',', ';'}
@@ -74,7 +74,6 @@ from tree_sitter import Language, Parser
 
 csharp_parser = Parser()
 csharp_parser.set_language(Language('parser/my-languages.so', 'c_sharp'))
-# csharp_parser = [parser, DFG_csharp]
 
 def tree_to_token_index(root_node):
     if (len(root_node.children)==0 or root_node.type=='string') and root_node.type!='comment':
