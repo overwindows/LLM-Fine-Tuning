@@ -4,3 +4,5 @@ datasets==2.10.1
 tqdm==4.65.0
 clang==14.0.0
 tree_sitter
+deepspeed
+accelerate
