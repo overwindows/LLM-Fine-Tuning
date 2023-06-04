@@ -1,9 +1,13 @@
+CKPT_PATH=path_to_specific_checkpoint
+
+
 deepspeed --num_gpus=8 finetune.py \
     --model_name_or_path bigscience/bloom-7b1  \
     --per_device_train_batch_size 2 \
     --num_train_epochs 8 \
     --logging_steps 10 --fp16 \
     --deepspeed z3_ds_config.json \
+    --resume_from_checkpoint $CKPT_PATH \
     --output_dir output --overwrite_output_dir
 
 # deepspeed --num_gpus=4 finetune-alpaca.py \
