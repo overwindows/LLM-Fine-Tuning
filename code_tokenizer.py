@@ -27,8 +27,7 @@ def simple_tokenize(text):
   
     return tokenized_text  
 
-clang.cindex.Config.set_library_file('/usr/lib/llvm-10/lib/libclang.so')
-
+clang.cindex.Config.set_library_file('/usr/lib/llvm-14/lib/libclang.so')
 
 TOK_NO_SPACE_BEFORE = {',', ';'}
 STRINGS_AND_COMMENTS_TOKEN_KINDS = {TokenKind.LITERAL, TokenKind.COMMENT}
@@ -74,6 +73,30 @@ from tree_sitter import Language, Parser
 
 csharp_parser = Parser()
 csharp_parser.set_language(Language('parser/my-languages.so', 'c_sharp'))
+
+c_parser = Parser()
+c_parser.set_language(Language('parser/my-languages.so', 'c'))
+
+php_parser = Parser()
+php_parser.set_language(Language('parser/my-languages.so', 'php'))
+
+ruby_parser = Parser()
+ruby_parser.set_language(Language('parser/my-languages.so', 'ruby'))
+
+scala_parser = Parser()
+scala_parser.set_language(Language('parser/my-languages.so', 'scala'))
+
+bash_parser = Parser()
+bash_parser.set_language(Language('parser/my-languages.so', 'bash'))
+
+json_parser = Parser()
+json_parser.set_language(Language('parser/my-languages.so', 'json'))
+
+go_parser = Parser()
+go_parser.set_language(Language('parser/my-languages.so', 'go'))
+
+typescript_parser = Parser()
+typescript_parser.set_language(Language('parser/my-languages.so', 'typescript'))
 
 def tree_to_token_index(root_node):
     if (len(root_node.children)==0 or root_node.type=='string') and root_node.type!='comment':
@@ -175,6 +198,53 @@ def detokenize_javascript(s):
     # print(s)
     return ' '.join(s)
 
+def tokenize_scala(s, keep_comments=True):
+    code = s.replace('. ', '.')
+    tree = scala_parser.parse(bytes(code, 'utf8'))
+
+    if keep_comments:
+        root_node = tree.root_node
+        tokens_index = tree_to_token_index(root_node)
+        code = code.split('\n')
+        code_tokens = [index_to_code_token(x, code) for x in tokens_index]
+        return code_tokens
+    else:
+        root_node = tree.root_node
+        tokens_index = tree_to_token_index(root_node)
+        code = code.split('\n')
+        code_tokens = [index_to_code_token(x, code) for x in tokens_index if code[x[0]][x[1]:x[1]+2]!='//']
+        return code_tokens
+
+def tokenize_ruby(s, keep_comments=False):
+    code = s.replace('. ', '.')
+    tree = ruby_parser.parse(bytes(code, 'utf8'))
+
+    root_node = tree.root_node
+    root_node = tree.root_node
+    tokens_index = tree_to_token_index(root_node)
+    code = code.split('\n')
+    code_tokens = [index_to_code_token(x, code) for x in tokens_index]
+    return code_tokens
+
+def tokenize_php(s, keep_comments=False):
+    code = s.replace('. ', '.')
+    tree = php_parser.parse(bytes(code, 'utf8'))
+
+    root_node = tree.root_node
+    tokens_index = tree_to_token_index(root_node)
+    code = code.split('\n')
+    code_tokens = [index_to_code_token(x, code) for x in tokens_index]
+    return code_tokens
+
+def tokenize_c(s, keep_comments=False):
+    code = s.replace('. ', '.')
+    tree = c_parser.parse(bytes(code, 'utf8'))
+
+    root_node = tree.root_node
+    tokens_index = tree_to_token_index(root_node)
+    code = code.split('\n')
+    code_tokens = [index_to_code_token(x, code) for x in tokens_index]
+    return code_tokens
 
 def tokenize_csharp(s, keep_comments=False):
     code = s.replace('. ', '.')
@@ -186,6 +256,15 @@ def tokenize_csharp(s, keep_comments=False):
     code_tokens = [index_to_code_token(x, code) for x in tokens_index]
     return code_tokens
 
+def tokenize_go(s, keep_comments=False):
+    code = s.replace('. ', '.')
+    tree = go_parser.parse(bytes(code, 'utf8'))
+
+    root_node = tree.root_node
+    tokens_index = tree_to_token_index(root_node)
+    code = code.split('\n')
+    code_tokens = [index_to_code_token(x, code) for x in tokens_index]
+    return code_tokens
 
 def detokenize_csharp(s):
     # offset0 = len('<DOCUMENT_ID="None">')
@@ -892,6 +971,34 @@ def extract_arguments_java_using_parentheses(f):
         types.append(t)
         names.append(n)
     return types, names
+  
+def tokenize_swift(code):  
+    keywords = set([  
+        "class", "deinit", "enum", "extension", "func", "import", "init", "inout", "let", "operator", "precedencegroup", "protocol", "struct", "subscript", "typealias", "var", "fileprivate", "internal", "private", "public", "static", "defer", "if", "guard", "do", "repeat", "else", "for", "case", "in", "while", "return", "break", "continue", "fallthrough", "switch", "default", "where", "catch", "throw", "throws", "rethrows", "try", "as", "Any", "false", "is", "nil", "rethrows", "super", "self", "Self", "throw", "true", "try", "catch"  
+    ])  
+      
+    symbols = set("(){}[].,;+-*/%=<>!&|^~?@:#")  
+      
+    tokens = []  
+    current = ""  
+      
+    for char in code:  
+        if char in symbols:  
+            if current:  
+                tokens.append(current)  
+                current = ""  
+            tokens.append(char)  
+        elif char.isspace():  
+            if current:  
+                tokens.append(current)  
+                current = ""  
+        else:  
+            current += char  
+      
+    if current:  
+        tokens.append(current)  
+      
+    return tokens  
 
 
 if __name__ == '__main__':
