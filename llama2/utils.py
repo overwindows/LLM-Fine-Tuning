@@ -8,7 +8,6 @@ from transformers import Trainer
 
 class ModifiedTrainer(Trainer):
     def compute_loss(self, model, inputs, return_outputs=False):
-        # print(inputs['input_ids'].size())
         return model(
             input_ids=inputs["input_ids"],
             attention_mask=torch.ones_like(inputs["input_ids"]).bool(),

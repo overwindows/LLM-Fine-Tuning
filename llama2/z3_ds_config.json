@@ -3,7 +3,7 @@
         "stage": 3,
         "offload_param": {
             "device": "cpu",
-            "pin_memory": true
+            "pin_memory": false
         },
         "overlap_comm": true,
         "contiguous_gradients": true,
@@ -15,6 +15,6 @@
         "stage3_max_reuse_distance": 1e9,
         "stage3_gather_16bit_weights_on_model_save": true
     },
-    "train_batch_size": 16,
-    "train_micro_batch_size_per_gpu": 8
+    "train_batch_size": 4,
+    "train_micro_batch_size_per_gpu": 1
 }
