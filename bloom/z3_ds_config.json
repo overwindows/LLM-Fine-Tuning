@@ -1,5 +1,4 @@
 {
-    "train_batch_size": 16,
     "zero_optimization": {
         "stage": 3,
         "offload_param": {
@@ -15,5 +14,7 @@
         "stage3_max_live_parameters": 1e9,
         "stage3_max_reuse_distance": 1e9,
         "stage3_gather_16bit_weights_on_model_save": true
-    }
+    },
+    "train_batch_size": 16,
+    "train_micro_batch_size_per_gpu": 8
 }

@@ -1,3 +1,11 @@
+#
+ssh sc-vnc1
+sngpu --interactive --time 5:59:59 --cpu 8 --mem 65536 --gpu 1
+source ~/venv_yoda/bin/activate
+
+
+
+
 # LLM-fine-tuning
 
 This project is for fine-tuning BLOOM. The repo contains:

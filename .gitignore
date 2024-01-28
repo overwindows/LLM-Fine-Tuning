@@ -1,5 +1,0 @@
-*.pyc
-.ipynb_checkpoints/*
-output/*
-timeout_cpp_tokenizer_examples.log
-parser/my-languages.so
