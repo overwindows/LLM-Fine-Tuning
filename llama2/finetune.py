@@ -2,7 +2,8 @@ import torch
 import transformers
 from transformers import TrainingArguments, DataCollatorWithPadding
 from datasets import load_dataset
-from utils import ModifiedTrainer, data_collator, tokenize_data, data_collator_ex
+from utils import ModifiedTrainer, data_collator, tokenize_data, \
+    data_collator_ex
 from utils import ModelArguments, DataArguments
 from transformers import AutoTokenizer, LlamaForCausalLM, AutoModelForCausalLM
 
