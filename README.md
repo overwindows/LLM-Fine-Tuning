@@ -8,20 +8,13 @@ source ~/venv_yoda/bin/activate
 
 # LLM-fine-tuning
 
-This project is for fine-tuning BLOOM. The repo contains:
-- We use [Stanford Alpaca](https://github.com/tatsu-lab/stanford_alpaca).
-
-Try it on Google Colab! <a href="https://colab.research.google.com/github/hyintell/BLOOM-fine-tuning/blob/main/finetune.ipynb"> 
-        <img alt="Build" src="https://colab.research.google.com/assets/colab-badge.svg">
-    </a>
+This project is for fine-tuning LLM. The repo contains:
 
 ## Installation
 
 ```bash
 pip install -r requirements.txt
 ```
-
-Data: [alpaca](https://huggingface.co/datasets/tatsu-lab/alpaca)
 
 ### Tokenize programming language with tree-sitter
 To get parser/my-languages.so, you need to build the Tree-sitter parser for the desired language (C# in this case) and create a directory named parser to store the compiled language library. 
