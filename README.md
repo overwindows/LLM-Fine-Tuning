@@ -1,14 +1,6 @@
-#
-ssh sc-vnc1
-sngpu --interactive --time 5:59:59 --cpu 8 --mem 65536 --gpu 1
-source ~/venv_yoda/bin/activate
-
-
-
-
 # LLM-fine-tuning
 
-This project is for fine-tuning LLM. The repo contains:
+This project is for fine-tuning LLM.
 
 ## Installation
 
@@ -16,7 +8,7 @@ This project is for fine-tuning LLM. The repo contains:
 pip install -r requirements.txt
 ```
 
-### Tokenize programming language with tree-sitter
+<!-- ### Tokenize programming language with tree-sitter
 To get parser/my-languages.so, you need to build the Tree-sitter parser for the desired language (C# in this case) and create a directory named parser to store the compiled language library. 
 
 Clone the Tree-sitter repository for the desired language. For C#, you can clone the tree-sitter-c-sharp repository.
@@ -58,4 +50,4 @@ python finetune-alpaca.py \
 - [x] Test bloom-560m
 - [x] Test bloom-1b7
 - [X] Test bloom-7b1
-- [ ] Support Evaluation
+- [ ] Support Evaluation -->
