@@ -1,8 +1,8 @@
 from dataclasses import dataclass, field
-from typing import Optional
-
+from typing import List, Optional
 import torch
 import tqdm
+import json
 from transformers import Trainer
 
 
@@ -24,29 +24,13 @@ def data_collator(features: list) -> dict:
     return {"input_ids": torch.stack([torch.LongTensor(f) for f in features])}
 
 
-def tokenize_data(dataset, tokenizer, max_seq_length=512):
-    tokenised_list = []
-    ix = 0
-    for elem in tqdm.tqdm(dataset):
-        tokenised_list.append(
-            tokenizer.encode(
-                # elem["text"],
-                elem["content"],
-                # elem["whole_func_string"],
-                max_length=max_seq_length,
-                padding="max_length",
-                truncation=True,
-            )
-        )
-        ix += 1
-        if ix > 500000:
-            break
-    return tokenised_list
-
-
 @dataclass
 class ModelArguments:
     model_name_or_path: Optional[str] = field(default="bigscience/bloom-560m")
+    training_type: Optional[str] = field(
+        default="causal_lm",
+        # choices=["causal_lm", "instruction_lm",'conversation_lm']
+    )
 
 
 @dataclass
@@ -54,3 +38,17 @@ class DataArguments:
     data_name_or_path: str = field(
         default="tatsu-lab/alpaca", metadata={"help": "Path to the training data."}
     )
+
+
+def conv_gen(data_files):
+    if not isinstance(data_files, List):
+        data_files = [data_files]
+    for file in data_files:
+        with open(file, 'r') as f:
+            for line in f:
+                yield {'conv': json.loads(line)}
+
+# from datasets import Dataset
+# data_files = ["/import/snvm-sc-scratch2/fengluh/web_master/training_data/train/booking_and_home_search.jsonl"]
+# ds = Dataset.from_generator(conv_gen, gen_kwargs={"data_files": data_files})
+# print(ds[0])
