@@ -22,7 +22,6 @@ def data_collator_ex(features) -> dict:
 def data_collator(features: list) -> dict:
     return {"input_ids": torch.stack([torch.LongTensor(f) for f in features])}
 
-
 def tokenize_data(dataset, tokenizer, max_seq_length=512):
     tokenised_list = []
     ix = 0
