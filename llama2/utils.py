@@ -16,6 +16,47 @@ class ModifiedTrainer(Trainer):
         ).loss
 
 
+def tokenize_data(example, tokenizer, max_length):
+    input_idss = []
+    attention_masks = []
+    labelss = []
+    for prompt_completion in example['conv']:
+        prompt = prompt_completion["prompt"]
+        completion = prompt_completion["completion"]
+
+        prompt_encoding = tokenizer.encode(
+            prompt, truncation=False, max_length=2048, add_special_tokens=False)
+        prompt_length = len(prompt_encoding)
+
+        encoding = tokenizer.encode_plus(
+            prompt,
+            completion,
+            truncation=True,
+            max_length=1024,
+            padding="max_length",
+            return_tensors="pt",
+            return_attention_mask=True,
+        )
+        labels = encoding.input_ids.clone()
+        labels[:, :prompt_length] = -100
+
+        input_idss.append(encoding.input_ids)
+        attention_masks.append(encoding.attention_mask)
+        labelss.append(labels)
+
+        # print(len(input_idss), len(attention_masks), len(labelss))
+        # print(attention_masks[0].shape)
+        concat_attention_masks = torch.cat(attention_masks, dim=-1)
+        concat_input_ids = torch.cat(input_idss, dim=-1)
+        concat_labels = torch.cat(labelss, dim=-1)
+        # print(concat_attention_masks.shape, concat_input_ids.shape, concat_labels.shape)
+    return {
+        'input_ids': concat_input_ids.squeeze(),
+        'attention_mask': concat_attention_masks.squeeze(),
+        'labels': concat_labels.squeeze()
+    }
+
+
 def data_collator_ex(features) -> dict:
     return {"input_ids": torch.stack([torch.LongTensor(f['input_ids']) for f in features])}
 
@@ -37,6 +78,10 @@ class ModelArguments:
 class DataArguments:
     data_name_or_path: str = field(
         default="tatsu-lab/alpaca", metadata={"help": "Path to the training data."}
+    )
+    data_cache_dir: str = field(
+        default="/import/snvm-sc-podscratch3/chenw/datasets",
+        metadata={"help": "Path to the training data."}
     )
 
 
