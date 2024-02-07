@@ -16,6 +16,18 @@ class ModifiedTrainer(Trainer):
         ).loss
 
 
+class ConvTrainer(Trainer):
+    def compute_loss(self, model, inputs, return_outputs=False):
+        loss = model(
+            input_ids=inputs["input_ids"],
+            attention_mask=inputs["attention_mask"],
+            labels=inputs["labels"],
+            use_cache=False
+        ).loss
+        # print(loss, loss.shape, inputs["input_ids"].shape)
+        return loss
+
+
 def tokenize_data(example, tokenizer, max_length):
     input_idss = []
     attention_masks = []
@@ -25,15 +37,18 @@ def tokenize_data(example, tokenizer, max_length):
         completion = prompt_completion["completion"]
 
         prompt_encoding = tokenizer.encode(
-            prompt, truncation=False, max_length=2048, add_special_tokens=False)
+            prompt, truncation=True, max_length=max_length, 
+            add_special_tokens=False
+        )
         prompt_length = len(prompt_encoding)
+        # print(prompt_length, max_length)
 
         encoding = tokenizer.encode_plus(
             prompt,
             completion,
             truncation=True,
-            max_length=1024,
-            padding="max_length",
+            add_special_tokens=False,
+            max_length=max_length,
             return_tensors="pt",
             return_attention_mask=True,
         )
@@ -49,6 +64,7 @@ def tokenize_data(example, tokenizer, max_length):
         concat_attention_masks = torch.cat(attention_masks, dim=-1)
         concat_input_ids = torch.cat(input_idss, dim=-1)
         concat_labels = torch.cat(labelss, dim=-1)
+
         # print(concat_attention_masks.shape, concat_input_ids.shape, concat_labels.shape)
     return {
         'input_ids': concat_input_ids.squeeze(),
