@@ -1,7 +1,6 @@
 from dataclasses import dataclass, field
 from typing import List, Optional
 import torch
-import tqdm
 import json
 from transformers import Trainer
 
@@ -28,7 +27,7 @@ class ConvTrainer(Trainer):
         return loss
 
 
-def tokenize_data(example, tokenizer, max_length):
+def tokenize_conv_data(example, tokenizer, max_length):
     input_idss = []
     attention_masks = []
     labelss = []
@@ -37,18 +36,15 @@ def tokenize_data(example, tokenizer, max_length):
         completion = prompt_completion["completion"]
 
         prompt_encoding = tokenizer.encode(
-            prompt, truncation=True, max_length=max_length, 
+            prompt, truncation=True,
             add_special_tokens=False
         )
         prompt_length = len(prompt_encoding)
-        # print(prompt_length, max_length)
-
         encoding = tokenizer.encode_plus(
             prompt,
             completion,
             truncation=True,
             add_special_tokens=False,
-            max_length=max_length,
             return_tensors="pt",
             return_attention_mask=True,
         )
@@ -59,17 +55,28 @@ def tokenize_data(example, tokenizer, max_length):
         attention_masks.append(encoding.attention_mask)
         labelss.append(labels)
 
-        # print(len(input_idss), len(attention_masks), len(labelss))
-        # print(attention_masks[0].shape)
-        concat_attention_masks = torch.cat(attention_masks, dim=-1)
-        concat_input_ids = torch.cat(input_idss, dim=-1)
-        concat_labels = torch.cat(labelss, dim=-1)
+    assert len(input_idss) == len(attention_masks) == len(labelss)
 
-        # print(concat_attention_masks.shape, concat_input_ids.shape, concat_labels.shape)
+    concat_attention_masks = torch.cat(attention_masks, dim=-1)
+    concat_input_ids = torch.cat(input_idss, dim=-1)
+    concat_labels = torch.cat(labelss, dim=-1)
+
+    conv_input_ids = concat_input_ids.squeeze()
+    conv_attention_masks = concat_attention_masks.squeeze()
+    conv_labels = concat_labels.squeeze()
+
+    fixed_length = 2048
+    padded_input_ids = torch.nn.functional.pad(
+        conv_input_ids, (0, fixed_length - len(conv_input_ids)), "constant", 0)
+    padded_attention_masks = torch.nn.functional.pad(
+        conv_attention_masks, (0, fixed_length - len(conv_attention_masks)), "constant", 0)
+    padded_labels = torch.nn.functional.pad(
+        conv_labels, (0, fixed_length - len(conv_labels)), "constant", -100)
+
     return {
-        'input_ids': concat_input_ids.squeeze(),
-        'attention_mask': concat_attention_masks.squeeze(),
-        'labels': concat_labels.squeeze()
+        'input_ids': padded_input_ids,
+        'attention_mask': padded_attention_masks,
+        'labels': padded_labels
     }
 
 
