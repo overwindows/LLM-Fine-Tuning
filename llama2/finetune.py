@@ -1,10 +1,9 @@
 import transformers
 from transformers import TrainingArguments
 from datasets import load_dataset, Dataset
-from utils import ModifiedTrainer, data_collator_ex, conv_gen, ConvTrainer
-from utils import ModelArguments, DataArguments, tokenize_data
+from helper import ModifiedTrainer, data_collator_ex, conv_gen, ConvTrainer
+from helper import ModelArguments, DataArguments, tokenize_conv_data
 from transformers import AutoTokenizer, LlamaForCausalLM, Trainer
-
 
 
 def main():
@@ -27,8 +26,9 @@ def main():
         dataset = Dataset.from_generator(
             conv_gen, gen_kwargs={"data_files": data_name})
     else:
-        dataset = load_dataset("json", data_files=data_name,
-                               cache_dir=data_cache_dir, streaming=True, split='train')
+        # dataset = load_dataset("json", data_files=data_name,
+        #                        cache_dir=data_cache_dir, streaming=True, split='train')
+        dataset = load_dataset("json", data_files=data_name, streaming=True, split='train')
     dataset = dataset.with_format('torch')
     def preprocess_function(example):
         return tokenizer(example['completion'], truncation=True, max_length=1024, padding="max_length")
@@ -55,11 +55,8 @@ def main():
     elif training_type == "instruction_lm":
         tokenized_dataset = dataset.map(preprocess_function_ex, batched=True)
     elif training_type == "conversation_lm":
-        # print(dataset)
-        # print(dataset[0]['conv'], len(dataset[0]['conv']))
-        # print(dataset[0]['conv'][1])
-        tokenized_dataset = dataset.map(tokenize_data, batched=False, fn_kwargs={
-                                        'tokenizer': tokenizer, 'max_length': 1024})
+        tokenized_dataset = dataset.map(tokenize_conv_data, batched=False, fn_kwargs={
+                                        'tokenizer': tokenizer, 'max_length': 1024}, load_from_cache_file=False)
     else:
         raise ValueError("Invalid training type")
     model.gradient_checkpointing_enable()
