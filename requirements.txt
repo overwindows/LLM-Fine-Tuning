@@ -1,8 +1,8 @@
 transformers==4.36.0
 torch>=1.13.1
-datasets==2.10.1
+datasets==2.17.0
 tqdm==4.65.0
 clang==14.0.0
 tree_sitter
-deepspeed
+deepspeed==0.13.2
 accelerate

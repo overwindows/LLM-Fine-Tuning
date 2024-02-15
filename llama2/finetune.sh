@@ -31,7 +31,7 @@ OUTPUT_DIR=/import/snvm-sc-podscratch3/chenw/model/llama2_7b_ft_gpu
 #     --output_dir $OUTPUT_DIR --overwrite_output_dir \
 #     --deepspeed z3_ds_config.json \
 
-deepspeed --num_gpus=$DEEPSPEED_GPUS --master_port $DEEPSPEED_PORT finetune.py \
+NCCL_SHM_DISABLE=1 deepspeed --num_gpus=$DEEPSPEED_GPUS --master_port $DEEPSPEED_PORT finetune.py \
     --model_name_or_path $MODEL_PATH \
     --data_name_or_path $DATA_PATH \
     --data_cache_dir $CACHE_DIR \
