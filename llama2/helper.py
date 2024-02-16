@@ -55,11 +55,15 @@ def tokenize_conv_data(example, tokenizer, max_length):
         attention_masks.append(encoding.attention_mask)
         labelss.append(labels)
 
+        # print(prompt_length, encoding.input_ids.shape, encoding.attention_mask.shape, labels.shape)
+
     assert len(input_idss) == len(attention_masks) == len(labelss)
 
     concat_attention_masks = torch.cat(attention_masks, dim=-1)
     concat_input_ids = torch.cat(input_idss, dim=-1)
     concat_labels = torch.cat(labelss, dim=-1)
+
+    # print(concat_input_ids.shape, concat_attention_masks.shape, concat_labels.shape)
 
     conv_input_ids = concat_input_ids.squeeze()
     conv_attention_masks = concat_attention_masks.squeeze()

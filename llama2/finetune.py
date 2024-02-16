@@ -28,10 +28,13 @@ def main():
     else:
         # dataset = load_dataset("json", data_files=data_name,
         #                        cache_dir=data_cache_dir, streaming=True, split='train')
-        dataset = load_dataset("json", data_files=data_name, streaming=True, split='train')
+        dataset = load_dataset("json", data_files=data_name,
+                               streaming=True, split='train')
     dataset = dataset.with_format('torch')
+
     def preprocess_function(example):
         return tokenizer(example['completion'], truncation=True, max_length=1024, padding="max_length")
+
     def preprocess_function_ex(example):
         # Encode the prompts and completions together
         encoding = tokenizer.encode_plus(
