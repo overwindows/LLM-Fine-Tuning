@@ -6,6 +6,8 @@ LEARNING_RATE=1e-5
 NUM_TRAIN_EPOCHS=8
 GRAD_ACC_STEPS=4
 PER_DEV_BZ=2
+SAVE_STEPS=16
+LR_SCHE_TYPE=constant
 
 DEEPSPEED_CONF=../ds_configs/z3_ds_config.json
 DEEPSPEED_PORT=9902
@@ -40,7 +42,7 @@ NCCL_SHM_DISABLE=1 deepspeed --num_gpus=$DEEPSPEED_GPUS --master_port $DEEPSPEED
     --gradient_accumulation_steps $GRAD_ACC_STEPS \
     --num_train_epochs $NUM_TRAIN_EPOCHS --max_steps 1000 \
     --logging_steps $LOG_STEPS --fp16 \
-    --save_steps 16 --lr_scheduler_type constant \
+    --save_steps $SAVE_STEPS --lr_scheduler_type $LR_SCHE_TYPE \
     --output_dir $OUTPUT_DIR --overwrite_output_dir \
     --training_type $TRAINING_TYPE \
     --deepspeed $DEEPSPEED_CONF \
