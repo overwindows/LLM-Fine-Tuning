@@ -45,5 +45,6 @@ NCCL_SHM_DISABLE=1 deepspeed --num_gpus=$DEEPSPEED_GPUS --master_port $DEEPSPEED
     --save_steps $SAVE_STEPS --lr_scheduler_type $LR_SCHE_TYPE \
     --output_dir $OUTPUT_DIR --overwrite_output_dir \
     --training_type $TRAINING_TYPE \
+    --report_to wandb \
     --deepspeed $DEEPSPEED_CONF \
     

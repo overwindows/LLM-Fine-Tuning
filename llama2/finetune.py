@@ -1,9 +1,14 @@
 import transformers
+import os
 from transformers import TrainingArguments
 from datasets import load_dataset, Dataset
 from helper import ModifiedTrainer, data_collator_ex, conv_gen, ConvTrainer
 from helper import ModelArguments, DataArguments, tokenize_conv_data
 from transformers import AutoTokenizer, LlamaForCausalLM, Trainer
+
+os.environ["WANDB_PROJECT"] = "Llama2_7B"  # name your W&B project
+# os.environ["WANDB_LOG_MODEL"] = "checkpoint"  # log all model checkpoints
+# os.environ[“WANDB_DISABLED”] = “true” # disable W&B logging
 
 
 def main():
@@ -14,6 +19,7 @@ def main():
     training_type = model_args.training_type
     data_cache_dir = data_args.data_cache_dir
     # device = torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
+    # print(f"Training Args: {training_args.report_to}")
     model_name = model_args.model_name_or_path
     tokenizer = AutoTokenizer.from_pretrained(
         f"{model_name}", add_prefix_space=True
