@@ -52,3 +52,11 @@ pip install manifest-ml[api]
 
 sh scripts/launch_manifest.sh
 ```
+
+```
+from manifest import Manifest
+manifest = Manifest(client_name = "huggingface", client_connection ="http://172.22.146.79:5000")
+print(manifest.client_pool.get_current_client().get_model_params())
+print(manifest.client_pool.get_current_client().get_model_inputs())
+print(manifest.run('tell me a joke.', max_tokens=128, client_timeout=3600))
+```
