@@ -44,10 +44,11 @@ python finetune-alpaca.py \
     --logging_steps 10 \
     --output_dir output
 ```
+-->
+## Local Service
+```
+pip install manifest-ml
+pip install manifest-ml[api]
 
-## Progress
-- [x] Add Code Corpus
-- [x] Test bloom-560m
-- [x] Test bloom-1b7
-- [X] Test bloom-7b1
-- [ ] Support Evaluation -->
+sh scripts/launch_manifest.sh
+```
