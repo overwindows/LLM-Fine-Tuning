@@ -24,7 +24,7 @@ DATA_PATH=/import/snvm-sc-scratch1/chenw/data/post_processed_data_wiki/splits/tr
 CACHE_DIR=/import/snvm-sc-podscratch3/chenw/dataset_cache
 
 MODEL_PATH=/import/snvm-sc-scratch2/reidg/models--mistralai--Mistral-7B-Instruct-v0.1/snapshots/9ab9e76e2b09f9f29ea2d56aa5bd139e4445c59e/
-OUTPUT_DIR=/import/snvm-sc-podscratch3/chenw/model/mistral_7b_ft_gpu_percent_10
+OUTPUT_DIR=/import/ml-sc-nlpcheckpoints-scratch3/chenw/models/mistral_7b_ft_gpu_percent_10
 
 # deepspeed --num_gpus=$DEEPSPEED_GPUS --master_port 9901 finetune.py \
 #     --model_name_or_path $MODEL_PATH \

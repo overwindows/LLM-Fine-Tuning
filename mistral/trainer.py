@@ -1,5 +1,5 @@
 import os
-from transformers import TrainingArguments,HfArgumentParser
+from transformers import TrainingArguments, HfArgumentParser
 from datasets import load_dataset, Dataset
 from helper import ModifiedTrainer, data_collator_ex, conv_gen, ConvTrainer
 from helper import ModelArguments, DataArguments, tokenize_conv_data
@@ -9,6 +9,7 @@ os.environ["WANDB_PROJECT"] = "Mistral_7B"  # name your W&B project
 # os.environ["WANDB_LOG_MODEL"] = "checkpoint"  # log all model checkpoints
 # os.environ[“WANDB_DISABLED”] = “true” # disable W&B logging
 MAX_LENGTH = 8192
+
 
 def main():
     parser = HfArgumentParser(
@@ -24,7 +25,7 @@ def main():
     tokenizer.pad_token = tokenizer.eos_token
     model = AutoModelForCausalLM.from_pretrained(
         f"{model_name}", use_cache=False).cuda()
-    
+
     data_name = data_args.data_name_or_path
     if training_type == "conversation_lm":
         dataset = Dataset.from_generator(
