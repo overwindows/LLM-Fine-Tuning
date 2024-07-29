@@ -3,14 +3,15 @@ source /import/snvm-sc-scratch1/chenw/gpu_env/bin/activate
 
 SKIP_STEPS=0
 WARMUP_STEPS=0
-LOG_STEPS=10
+LOG_STEPS=1
 SAVE_INTERVAL=1
-LEARNING_RATE=1e-5
-NUM_TRAIN_EPOCHS=8
+LEARNING_RATE=1e-6
+NUM_TRAIN_EPOCHS=16
 GRAD_ACC_STEPS=4
 PER_DEV_BZ=2
-SAVE_STEPS=16
-LR_SCHE_TYPE=constant
+SAVE_STEPS=256
+LR_SCHE_TYPE=cosine
+MAX_STEPS=2000
 
 DEEPSPEED_CONF=../ds_configs/z3_ds_config.json
 DEEPSPEED_PORT=9902
@@ -20,11 +21,12 @@ DATASET_CACHE=/import/snvm-sc-podscratch3/chenw/dataset_cache
 TRAINING_TYPE=causal_lm
 
 # DATA_PATH=/import/snvm-sc-scratch1/chenw/data/processed_data/article_data.jsonl
-DATA_PATH=/import/snvm-sc-scratch1/chenw/data/post_processed_data_wiki/splits/train_1_of_10.jsonl
+# DATA_PATH=/import/snvm-sc-scratch1/chenw/data/post_processed_data_wiki/splits/train_2_of_10.jsonl
+DATA_PATH=/import/snvm-sc-scratch1/chenw/data/post_processed_data_wiki/splits/train_8_of_10.jsonl
 CACHE_DIR=/import/snvm-sc-podscratch3/chenw/dataset_cache
 
 MODEL_PATH=/import/snvm-sc-scratch2/reidg/models--mistralai--Mistral-7B-Instruct-v0.1/snapshots/9ab9e76e2b09f9f29ea2d56aa5bd139e4445c59e/
-OUTPUT_DIR=/import/ml-sc-nlpcheckpoints-scratch3/chenw/models/mistral_7b_ft_gpu_percent_10
+OUTPUT_DIR=/import/ml-sc-nlpcheckpoints-scratch3/chenw/models/mistral_7b_ft_gpu_percent_80
 
 # deepspeed --num_gpus=$DEEPSPEED_GPUS --master_port 9901 finetune.py \
 #     --model_name_or_path $MODEL_PATH \
@@ -42,8 +44,10 @@ NCCL_SHM_DISABLE=1 deepspeed --num_gpus=$DEEPSPEED_GPUS --master_port $DEEPSPEED
     --data_cache_dir $CACHE_DIR \
     --per_device_train_batch_size $PER_DEV_BZ \
     --learning_rate $LEARNING_RATE \
+    --weight_decay 0. \
+    --warmup_ratio 0.03 \
     --gradient_accumulation_steps $GRAD_ACC_STEPS \
-    --num_train_epochs $NUM_TRAIN_EPOCHS --max_steps 1000 \
+    --num_train_epochs $NUM_TRAIN_EPOCHS \
     --logging_steps $LOG_STEPS --fp16 \
     --save_steps $SAVE_STEPS --lr_scheduler_type $LR_SCHE_TYPE \
     --output_dir $OUTPUT_DIR --overwrite_output_dir \
