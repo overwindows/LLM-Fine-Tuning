@@ -11,7 +11,7 @@ GRAD_ACC_STEPS=4
 PER_DEV_BZ=2
 SAVE_STEPS=256
 LR_SCHE_TYPE=cosine
-MAX_STEPS=2000
+MAX_STEPS=20000
 
 DEEPSPEED_CONF=../ds_configs/z3_ds_config.json
 DEEPSPEED_PORT=9902
@@ -48,6 +48,7 @@ NCCL_SHM_DISABLE=1 deepspeed --num_gpus=$DEEPSPEED_GPUS --master_port $DEEPSPEED
     --warmup_ratio 0.03 \
     --gradient_accumulation_steps $GRAD_ACC_STEPS \
     --num_train_epochs $NUM_TRAIN_EPOCHS \
+    --max_steps $MAX_STEPS \
     --logging_steps $LOG_STEPS --fp16 \
     --save_steps $SAVE_STEPS --lr_scheduler_type $LR_SCHE_TYPE \
     --output_dir $OUTPUT_DIR --overwrite_output_dir \
