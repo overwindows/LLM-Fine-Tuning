@@ -6,12 +6,12 @@ WARMUP_STEPS=0
 LOG_STEPS=1
 SAVE_INTERVAL=1
 LEARNING_RATE=1e-6
-NUM_TRAIN_EPOCHS=16
+NUM_TRAIN_EPOCHS=6
 GRAD_ACC_STEPS=4
 PER_DEV_BZ=2
-SAVE_STEPS=256
+SAVE_STEPS=128
 LR_SCHE_TYPE=cosine
-MAX_STEPS=20000
+MAX_STEPS=10000
 
 DEEPSPEED_CONF=../ds_configs/z3_ds_config.json
 DEEPSPEED_PORT=9902
@@ -22,11 +22,14 @@ TRAINING_TYPE=causal_lm
 
 # DATA_PATH=/import/snvm-sc-scratch1/chenw/data/processed_data/article_data.jsonl
 # DATA_PATH=/import/snvm-sc-scratch1/chenw/data/post_processed_data_wiki/splits/train_2_of_10.jsonl
-DATA_PATH=/import/snvm-sc-scratch1/chenw/data/post_processed_data_wiki/splits/train_8_of_10.jsonl
+# DATA_PATH=/import/snvm-sc-scratch1/chenw/data/post_processed_data_wiki/splits/train_8_of_10.jsonl
+DATA_PATH=/import/snvm-sc-scratch1/chenw/data/squad_v2_train.json
 CACHE_DIR=/import/snvm-sc-podscratch3/chenw/dataset_cache
 
-MODEL_PATH=/import/snvm-sc-scratch2/reidg/models--mistralai--Mistral-7B-Instruct-v0.1/snapshots/9ab9e76e2b09f9f29ea2d56aa5bd139e4445c59e/
-OUTPUT_DIR=/import/ml-sc-nlpcheckpoints-scratch3/chenw/models/mistral_7b_ft_gpu_percent_80
+# MODEL_PATH=/import/snvm-sc-scratch2/reidg/models--mistralai--Mistral-7B-Instruct-v0.1/snapshots/9ab9e76e2b09f9f29ea2d56aa5bd139e4445c59e/
+MODEL_PATH=/import/ml-sc-nlpcheckpoints-scratch3/chenw/models/mistral_7b_ft_gpu_percent_80/checkpoint-3584
+# OUTPUT_DIR=/import/ml-sc-nlpcheckpoints-scratch3/chenw/models/mistral_7b_ft_gpu_percent_80
+OUTPUT_DIR=/import/ml-sc-nlpcheckpoints-scratch3/chenw/models/mistral_7b_mrc_80
 
 # deepspeed --num_gpus=$DEEPSPEED_GPUS --master_port 9901 finetune.py \
 #     --model_name_or_path $MODEL_PATH \
