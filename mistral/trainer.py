@@ -58,6 +58,7 @@ def main():
             'attention_mask': encoding.attention_mask,
             'labels': labels
         }
+        
     if training_type == "causal_lm":
         tokenized_dataset = dataset.map(preprocess_function, batched=True)
     elif training_type == "instruction_lm":

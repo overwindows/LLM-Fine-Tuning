@@ -2,10 +2,69 @@ from dataclasses import dataclass, field
 from typing import List, Optional
 import torch
 import json
-from transformers import Trainer
+from transformers import Trainer, AdamW
 
 
 class ModifiedTrainer(Trainer):
+    def create_optimizer(self):
+        # assert self.optimizer is None, "An optimizer was already created"
+        if self.optimizer is not None:
+            print("Optimizer already created")
+            # print the parameters and learning rates in the optimizer
+            # for param_group in self.optimizer.param_groups:
+            #     print(param_group['lr'])
+            # print(self.optimizer)
+            return self.optimizer
+        print("Creating optimizer")
+        model = self.model
+        base_lr = self.args.learning_rate
+        decay_rate = 0.85
+
+        optimizer_grouped_parameters = []
+
+        layers = model.model.layers
+        num_layers = len(layers)
+        print(f"Number of layers: {num_layers}")
+        # Assign learning rates
+        for i, layer in enumerate(layers):
+            lr = base_lr * (decay_rate ** (num_layers - i - 1))
+            # print(layer)
+            optimizer_grouped_parameters.append({
+                'params': layer.parameters(),
+                'lr': lr,
+            })
+
+        # Embedding layer
+        embeddings_lr = base_lr * (decay_rate ** num_layers)
+        optimizer_grouped_parameters.append({
+            'params': model.model.embed_tokens.parameters(),
+            'lr': embeddings_lr,
+        })
+        
+        # Other parameters (e.g., LayerNorm, output heads)
+        other_params = []
+        for name, param in model.named_parameters():
+            if 'model.layers' not in name and 'model.embed_tokens' not in name:
+                print(name)
+                other_params.append(param)
+
+        optimizer_grouped_parameters.append({
+            'params': other_params,
+            'lr': base_lr,
+        })
+
+        # Create optimizer
+        self.optimizer = AdamW(
+            optimizer_grouped_parameters,
+            betas=(self.args.adam_beta1, self.args.adam_beta2),
+            eps=self.args.adam_epsilon
+        )
+
+        # for param_group in self.optimizer.param_groups:
+        #     print(param_group['lr'])
+        # print(self.optimizer)
+        return self.optimizer
+    
     def compute_loss(self, model, inputs, return_outputs=False):
         return model(
             input_ids=inputs["input_ids"],
