@@ -5,6 +5,76 @@ import json
 from transformers import Trainer, AdamW
 
 
+class CustomTrainer(Trainer):
+    def compute_loss(self, model, inputs, return_outputs=False):
+        # print(inputs["input_ids"].shape,
+        #       inputs["attention_mask"].shape, inputs["labels"].shape)
+        loss = model(
+            input_ids=inputs["input_ids"],
+            attention_mask=inputs["attention_mask"],
+            labels=inputs["labels"],
+            use_cache=False
+        ).loss
+        # print(loss, loss.shape, inputs["input_ids"].shape)
+        return loss
+
+    def create_optimizer(self):
+        if self.optimizer is not None:
+            print("Optimizer already created")
+            # print the parameters and learning rates in the optimizer
+            # for param_group in self.optimizer.param_groups:
+            #     print(param_group['lr'])
+            # print(self.optimizer)
+            return self.optimizer
+        print("Creating optimizer")
+        model = self.model
+        base_lr = self.args.learning_rate
+        print(f"Base learning rate: {base_lr}")
+        decay_rate = 0.9
+
+        optimizer_grouped_parameters = []
+
+        layers = model.model.layers
+        num_layers = len(layers)
+        print(f"Number of layers: {num_layers}")
+        # Assign learning rates
+        for i, layer in enumerate(layers):
+            lr = base_lr * (decay_rate ** (i+1))
+            # print(layer)
+            optimizer_grouped_parameters.append({
+                'params': layer.parameters(),
+                'lr': lr,
+            })
+
+        # Embedding layer
+        embeddings_lr = base_lr
+        optimizer_grouped_parameters.append({
+            'params': model.model.embed_tokens.parameters(),
+            'lr': embeddings_lr,
+        })
+
+        # Other parameters (e.g., LayerNorm, output heads)
+        other_params = []
+        for name, param in model.named_parameters():
+            if 'model.layers' not in name and 'model.embed_tokens' not in name:
+                print(name)
+                other_params.append(param)
+
+        optimizer_grouped_parameters.append({
+            'params': other_params,
+            'lr': base_lr,
+        })
+
+        # Create optimizer
+        self.optimizer = AdamW(
+            optimizer_grouped_parameters,
+            betas=(self.args.adam_beta1, self.args.adam_beta2),
+            eps=self.args.adam_epsilon
+        )
+
+        return self.optimizer
+
+
 class ModifiedTrainer(Trainer):
     def create_optimizer(self):
         # assert self.optimizer is None, "An optimizer was already created"
@@ -27,7 +97,7 @@ class ModifiedTrainer(Trainer):
         print(f"Number of layers: {num_layers}")
         # Assign learning rates
         for i, layer in enumerate(layers):
-            lr = base_lr * (decay_rate ** (num_layers - i - 1))
+            lr = base_lr * (decay_rate ** (i + 1))
             # print(layer)
             optimizer_grouped_parameters.append({
                 'params': layer.parameters(),
@@ -35,12 +105,12 @@ class ModifiedTrainer(Trainer):
             })
 
         # Embedding layer
-        embeddings_lr = base_lr * (decay_rate ** num_layers)
+        embeddings_lr = base_lr
         optimizer_grouped_parameters.append({
             'params': model.model.embed_tokens.parameters(),
             'lr': embeddings_lr,
         })
-        
+
         # Other parameters (e.g., LayerNorm, output heads)
         other_params = []
         for name, param in model.named_parameters():
@@ -64,7 +134,7 @@ class ModifiedTrainer(Trainer):
         #     print(param_group['lr'])
         # print(self.optimizer)
         return self.optimizer
-    
+
     def compute_loss(self, model, inputs, return_outputs=False):
         return model(
             input_ids=inputs["input_ids"],
@@ -84,6 +154,51 @@ class ConvTrainer(Trainer):
         ).loss
         # print(loss, loss.shape, inputs["input_ids"].shape)
         return loss
+
+
+def preprocess_func4it(example, tokenizer, max_length):
+    """
+    Preprocess a single example for model training.
+
+    Args:
+        example (dict): A dictionary containing 'prompt' and 'completion'.
+        tokenizer: The tokenizer to encode the text.
+        max_length (int): The maximum length for tokenization.
+
+    Returns:
+        dict: A dictionary with 'input_ids', 'attention_mask', and 'labels'.
+    """
+
+    # Ensure the prompt is empty before setting it
+    if example['prompt'] != "":
+        raise ValueError(f"Prompt is not empty: {example['prompt']}")
+
+    # Set the default prompt
+    example['prompt'] = "[INST] Please continue the following text. [/INST]"
+
+    # Encode the prompt to get its length
+    prompt = example['prompt']
+    completion = example['completion']
+    
+    # Encode the prompt and completion
+    encoded_prompt = tokenizer(prompt, return_tensors='pt', add_special_tokens=False, truncation=True)
+    encoded_completion = tokenizer(completion, return_tensors='pt', padding='max_length', truncation=True, add_special_tokens=False, max_length=max_length)
+
+    # Combine the encoded prompt and completion
+    input_ids = torch.cat((encoded_prompt['input_ids'], encoded_completion['input_ids']), dim=1)
+
+    # Create labels only for the completion
+    labels = torch.full_like(input_ids, -100)  # Fill with -100
+    labels[:, encoded_prompt['input_ids'].shape[1]:] = encoded_completion['input_ids']  # Only completion tokens are labeled
+
+    # Create attention mask
+    attention_mask = torch.cat((encoded_prompt['attention_mask'], encoded_completion['attention_mask']), dim=1)
+    # print(input_ids.shape, attention_mask.shape, labels.shape)
+    return {
+        'input_ids': input_ids.squeeze(),
+        'attention_mask': attention_mask.squeeze(),
+        'labels': labels.squeeze()
+    }
 
 
 def tokenize_conv_data(example, tokenizer, max_length):

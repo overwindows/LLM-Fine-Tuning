@@ -1,8 +1,8 @@
 import os
 from transformers import TrainingArguments, HfArgumentParser
 from datasets import load_dataset, Dataset
-from helper import ModifiedTrainer, data_collator_ex, conv_gen, ConvTrainer
-from helper import ModelArguments, DataArguments, tokenize_conv_data
+from helper import ModifiedTrainer, data_collator_ex, conv_gen, ConvTrainer, CustomTrainer
+from helper import ModelArguments, DataArguments, tokenize_conv_data, preprocess_func4it
 from transformers import AutoTokenizer, AutoModelForCausalLM, Trainer
 
 os.environ["WANDB_PROJECT"] = "Mistral_7B"  # name your W&B project
@@ -23,8 +23,6 @@ def main():
         f"{model_name}", add_prefix_space=True
     )
     tokenizer.pad_token = tokenizer.eos_token
-    model = AutoModelForCausalLM.from_pretrained(
-        f"{model_name}", use_cache=False).cuda()
 
     data_name = data_args.data_name_or_path
     if training_type == "conversation_lm":
@@ -53,21 +51,29 @@ def main():
         # Prepare the labels by shifting the tokens, setting the prompt tokens to -100
         labels = encoding.input_ids.clone()
         labels[:, :encoding['prompt_length']] = -100
+
         return {
             'input_ids': encoding.input_ids,
             'attention_mask': encoding.attention_mask,
             'labels': labels
         }
-        
+    # only print the log on the first process
+    if training_args.local_rank in [-1, 0]:
+        print("Training Type: ", training_type)
+
     if training_type == "causal_lm":
         tokenized_dataset = dataset.map(preprocess_function, batched=True)
     elif training_type == "instruction_lm":
-        tokenized_dataset = dataset.map(preprocess_function_ex, batched=True)
+        tokenized_dataset = dataset.map(preprocess_func4it, batched=False, fn_kwargs={
+                                        'tokenizer': tokenizer, 'max_length': MAX_LENGTH})
     elif training_type == "conversation_lm":
         tokenized_dataset = dataset.map(tokenize_conv_data, batched=False, fn_kwargs={
                                         'tokenizer': tokenizer, 'max_length': MAX_LENGTH}, load_from_cache_file=False)
     else:
         raise ValueError("Invalid training type")
+
+    model = AutoModelForCausalLM.from_pretrained(
+        f"{model_name}", use_cache=False).cuda()
     model.gradient_checkpointing_enable()
     model.is_parallelizable = True
     model.model_parallel = True
@@ -82,7 +88,7 @@ def main():
             data_collator=data_collator_ex,
         )
     elif training_type == "instruction_lm":
-        trainer = Trainer(
+        trainer = CustomTrainer(
             model=model,
             train_dataset=tokenized_dataset,
             args=training_args,
