@@ -2,3 +2,6 @@ llama2/__pycache__/
 llama2/wandb/
 mistral/wandb/
 mistral/__pycache__/
+images/
+examples/*.pth
+*.tsv
