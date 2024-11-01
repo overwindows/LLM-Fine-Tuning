@@ -120,7 +120,17 @@ def conv_gen(data_files):
             for line in f:
                 yield {'conv': json.loads(line)}
 
-# from datasets import Dataset
-# data_files = ["/import/snvm-sc-scratch2/fengluh/web_master/training_data/train/booking_and_home_search.jsonl"]
-# ds = Dataset.from_generator(conv_gen, gen_kwargs={"data_files": data_files})
-# print(ds[0])
+
+def download_model(mistral_models_path: str):
+    from huggingface_hub import snapshot_download
+    from pathlib import Path
+    from huggingface_hub import login
+
+    login()
+
+    mistral_models_path = Path.home().joinpath('mistral_models', '7B-Instruct-v0.3')
+    mistral_models_path.mkdir(parents=True, exist_ok=True)
+
+    snapshot_download(repo_id="mistralai/Mistral-7B-Instruct-v0.3", allow_patterns=["params.json", "consolidated.safetensors", "tokenizer.model.v3"], local_dir=mistral_models_path)
+
+download_model('/home/wuc/Mistral-7B-Instruct-v0_3')
