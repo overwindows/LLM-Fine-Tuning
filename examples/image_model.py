@@ -12,6 +12,11 @@ import tqdm
 import hashlib
 import os
 
+# Load model directly
+import torch
+from PIL import Image
+from transformers import AutoModelForImageClassification, ViTImageProcessor
+
 class ImageClassifier(nn.Module):
     def __init__(self, model_name='resnet50', num_classes=2):
         super(ImageClassifier, self).__init__()
@@ -168,13 +173,143 @@ def inference(image_url: str):
     output = torch.softmax(output, dim=1)
     print(output)
 
-if __name__ == "__main__":
-    # train(num_epochs=5)
+
+def inference_hf(data_lines):
+    model = AutoModelForImageClassification.from_pretrained("/home/wuc/nsfw_image_detection")
+    processor = ViTImageProcessor.from_pretrained('/home/wuc/nsfw_image_detection')    
+    model.eval()
+    model.cuda()
     
-    # image_url = "https://th.bing.com/th?id=OIP-C.-stzh95TNmX5w_tuipB6-wHaKb&pid=Wdp"
+    resutls = []
+    for data in tqdm.tqdm(data_lines, total=len(data_lines)):
+        image_url = data['imageUrl']
+        # print(f"Processing image: {image_url}")
+        with torch.no_grad():
+            response = requests.get(image_url)
+            if response.status_code != 200:
+                print(f"Failed to access the image: {data_dict['imageUrl']}")
+                continue
+            img = Image.open(BytesIO(response.content)).convert('RGB')
+            inputs = processor(images=img, return_tensors="pt")
+            inputs.to("cuda")
+            outputs = model(**inputs)
+            logits = outputs.logits
+        
+        predicted_label = model.config.id2label[logits.argmax(-1).item()]
+        ground_truth_label = data['GroundTruthLabel']
+        gpt4o_label = data['GPT4oLabel']
+        
+        resutls.append({
+            'imageUrl': image_url,
+            'predicted_label': predicted_label,
+            'ground_truth_label': ground_truth_label,
+            'gpt4o_label': gpt4o_label
+        })
+    
+    with open("hf_results.csv", "w") as f:
+        f.write("imageUrl,predicted_label,ground_truth_label,gpt4o_label\n")
+        for result in resutls:
+            f.write(f"{result['imageUrl']},{result['predicted_label']},{result['ground_truth_label']},{result['gpt4o_label']}\n")
+
+
+if __name__ == "__main__":
+    # train(num_epochs=5)    
+    image_url = "https://th.bing.com/th?id=OIP-C.-stzh95TNmX5w_tuipB6-wHaKb&pid=Wdp"
     # image_url = "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1pDFyu.img"
     # image_url = "https://th.bing.com/th?id=ORMS.2f149bb16434bf70d3a5c85b5329d893&pid=Wdp"
-    image_url = "https://th.bing.com/th?id=ORMS.301339b2b3fda5bcf61795b66ea4cf14&pid=Wdp"
+    # image_url = "https://th.bing.com/th?id=ORMS.301339b2b3fda5bcf61795b66ea4cf14&pid=Wdp"
     # image_url = "https://th.bing.com/th/id/OIP.FNbX0bXh8l3JYww-QthwIwHaLz?w=136&h=218&c=7&r=0&o=5&pid=1.7"
     # image_url = "https://th.bing.com/th/id/OIP.tyvhBPVwoeWRuq_yhuy3mwHaHo?w=200&h=206&c=7&r=0&o=5&pid=1.7"
-    inference(image_url)
+    # inference(image_url)
+    file_path = "ds3.csv"
+    df_ds3 = pd.read_csv(file_path)
+    print(df_ds3.columns)
+    
+    num_rows = df_ds3.shape[0]
+    print("Number of rows:", num_rows)
+    data_lines = []
+    for i in tqdm.trange(num_rows):
+        data_dict = {}
+        data_dict['imageUrl'] = df_ds3.iloc[i]['BingUrl']
+        data_dict['GPT4oLabel'] = df_ds3.iloc[i]['GPT4oLabel']
+        data_dict['GroundTruthLabel'] = df_ds3.iloc[i]['GroundTruthLabel']
+        data_lines.append(data_dict)
+    
+    from PIL import Image 
+    import requests 
+    from transformers import AutoModelForCausalLM 
+    from transformers import AutoProcessor 
+
+    model_id = "microsoft/Phi-3.5-vision-instruct" 
+
+    # Note: set _attn_implementation='eager' if you don't have flash_attn installed
+    model = AutoModelForCausalLM.from_pretrained(
+        model_id, 
+        device_map="cuda", 
+        trust_remote_code=True, 
+        torch_dtype=torch.float16, 
+        _attn_implementation='eager'    
+    )
+
+    # for best performance, use num_crops=4 for multi-frame, num_crops=16 for single-frame.
+    processor = AutoProcessor.from_pretrained(model_id, 
+        trust_remote_code=True, 
+        num_crops=2
+    ) 
+    
+    # Read prompt content from txt file.
+    with open("prompt.txt", "r") as f:
+        prompt_conetent = f.read().strip()
+    
+    responses = []
+    
+    for data in tqdm.tqdm(data_lines, total=len(data_lines)):
+        image_url = data['imageUrl']
+        response_dict = {}
+        images = []
+        
+        response = requests.get(image_url)
+        if response.status_code != 200:
+            print(f"Failed to access the image: {data_dict['imageUrl']}")
+            continue
+        img = Image.open(BytesIO(response.content)).convert('RGB')
+        images.append(img)        
+        # images.append(Image.open(requests.get(image_url, stream=True).raw))
+        messages = [
+            {"role": "user", "content": "<|image_1|>\n"+prompt_conetent},
+        ]
+
+        prompt = processor.tokenizer.apply_chat_template(
+                messages, 
+                tokenize=False, 
+                add_generation_prompt=True,
+        )
+
+        inputs = processor(prompt, images, return_tensors="pt").to("cuda:0") 
+
+        generation_args = { 
+            "max_new_tokens": 1000, 
+            "temperature": 0.0, 
+            "do_sample": False, 
+        } 
+
+        generate_ids = model.generate(**inputs, 
+            eos_token_id=processor.tokenizer.eos_token_id, 
+            **generation_args
+            )
+
+        # remove input tokens 
+        generate_ids = generate_ids[:, inputs['input_ids'].shape[1]:]
+        response = processor.batch_decode(generate_ids, 
+        skip_special_tokens=True, 
+        clean_up_tokenization_spaces=False)[0] 
+        
+        response_dict['imageUrl'] = image_url
+        response_dict['phi35Label'] = response
+        
+        responses.append(response_dict)
+    
+    with open("phi3_5_results.csv", "w") as f:
+        f.write("imageUrl,phi35Label\n")
+        for response in responses:
+            f.write(f"{response['imageUrl']},{response['phi35Label']}\n")    
